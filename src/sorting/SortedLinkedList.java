@@ -12,6 +12,30 @@ public class SortedLinkedList<T extends Comparable<T>> extends LinkedList<T> {
         this.quickSort(0, size() - 1);
     }
 
+    public void shellSort() {
+        int h = 1;
+        int n = size();
+
+        while (h < n) h = h * 3 + 1;
+
+        do {
+            h = h / 3;
+            for (var i = h; i < n; i++) {
+                T value = get(i);
+                int j = i - h;
+
+                while (j >= 0 && value.compareTo(get(j)) < 0) {
+                    set(j + h, get(j));
+                    j = j - h;
+                }
+
+                set(j + h, value);
+            }
+
+        } while (h != 1);
+
+    }
+
     private void quickSort(int left, int right) {
         int pivot = (left + right) / 2;
         int i = left;
