@@ -12,7 +12,7 @@ package shared;
  * @param <T> generic type
  * @author lucasqueiroz
  */
-public interface Tree<T> {
+public interface Tree<T extends Comparable<T>> {
 
     boolean insert(T data);
 
@@ -25,4 +25,6 @@ public interface Tree<T> {
     void clear();
 
     int search(T data);
+
+    boolean isEmpty();
 }
