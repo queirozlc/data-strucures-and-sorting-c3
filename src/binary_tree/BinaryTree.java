@@ -3,6 +3,7 @@ package binary_tree;
 import shared.Tree;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
@@ -35,7 +36,13 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
     public boolean delete(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
-        return false;
+        if (isEmpty()) return false;
+
+        var result = this.delete(this.root, data).isPresent();
+
+        if (result) this.size--;
+
+        return result;
     }
 
     @Override
@@ -63,6 +70,53 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return this.root == null;
     }
 
+    /**
+     * <h2>
+     * Recursive delete method
+     * </h2>
+     *
+     * <p>
+     * This method perform a recursive delete in the tree, returning an optional of the node to be deleted.
+     * </p>
+     *
+     * @param node current node
+     * @param data value to be deleted
+     * @return Optional<Node> node to be deleted
+     * @see java.util.Optional
+     */
+    private Optional<Node> delete(Node node, T data) {
+        if (Objects.isNull(node)) return Optional.empty();
+
+        if (node.biggerThan(data)) {
+            node.addLeft(this.delete(node.left, data).orElse(null));
+            return Optional.of(node);
+        }
+
+        if (node.lowerThan(data)) {
+            node.addRight(this.delete(node.right, data).orElse(null));
+            return Optional.of(node);
+        }
+
+        if (Objects.isNull(node.left)) return Optional.ofNullable(node.right);
+
+        if (Objects.isNull(node.right)) {
+            return Optional.of(node.left);
+        }
+
+        node.addLeft(this.findMax(node, node.left));
+        return Optional.of(node);
+    }
+
+    private Node findMax(Node node, Node max) {
+        if (Objects.isNull(max.right)) {
+            node.setValue(max.value);
+            return max.left;
+        }
+
+        max.addRight(this.findMax(node, max.right));
+        return max;
+    }
+
     private boolean insert(Node node, T data) {
         if (node.equals(data)) return false;
 
@@ -83,8 +137,32 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return this.insert(node.right, data);
     }
 
+    /**
+     * <h2>
+     * Recursive in order traversal
+     * </h2>
+     * <p>
+     * In order search: left -> root -> right
+     * </p>
+     *
+     * @param node current node
+     * @param data value to be searched
+     * @return T value to be searched
+     */
+    private T traversalInOrder(Node node, T data) {
+        if (Objects.isNull(node)) return null;
+
+        var left = this.traversalInOrder(node.left, data);
+
+        if (Objects.nonNull(left)) return left;
+
+        if (node.equals(data)) return node.value;
+
+        return this.traversalInOrder(node.right, data);
+    }
+
     private class Node {
-        private final T value;
+        private T value;
         private Node left;
         private Node right;
 
@@ -112,6 +190,10 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
         public void addRight(Node node) {
             this.right = node;
+        }
+
+        public void setValue(T value) {
+            this.value = value;
         }
     }
 }
