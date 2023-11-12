@@ -62,6 +62,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
     @Override
     public void clear() {
         this.root = null;
+        this.size = 0;
     }
 
     /**
