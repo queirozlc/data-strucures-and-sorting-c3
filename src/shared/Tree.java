@@ -1,5 +1,6 @@
 package shared;
 
+
 /**
  * <h2>
  * Tree interface
@@ -24,7 +25,7 @@ public interface Tree<T extends Comparable<T>> {
 
     void clear();
 
-    int search(T data);
+    T search(T data);
 
     boolean isEmpty();
 }
