@@ -86,6 +86,32 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return this.traversalInOrder(this.root, data);
     }
 
+    /**
+     * <h2>
+     * Search method - This Method perform a pre order search in the tree
+     * </h2>
+     *
+     * <p>
+     * This method perform a pre order search in the tree, returning an optional of the value to be searched.
+     * </p>
+     *
+     * <p>
+     * Pre order search: root -> left -> right
+     * </p>
+     *
+     * @param data value to be searched
+     * @return Optional<T> An optional of the value to be searched
+     * @see java.util.Optional
+     * @see <a href="https://en.wikipedia.org/wiki/Tree_traversal#Pre-order_(NLR)">Pre order search</a>
+     */
+    public Optional<T> searchPreOrder(T data) {
+        if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
+
+        if (isEmpty()) return null;
+
+        return this.traversalPreOrder(this.root, data);
+    }
+
     @Override
     public boolean isEmpty() {
         return this.root == null;
@@ -180,6 +206,63 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         if (node.equals(data)) return node.value;
 
         return this.traversalInOrder(node.right, data);
+    }
+
+    /**
+     * <h2>
+     * Recursive pre order traversal
+     * </h2>
+     *
+     * <p>
+     * Pre order search: root -> left -> right
+     * </p>
+     *
+     * @param node current node
+     * @param data value to be searched
+     * @return Optional<T> An optional of the value to be searched
+     * @see java.util.Optional
+     */
+    private Optional<T> traversalPreOrder(Node node, T data) {
+        if (Objects.isNull(node)) return Optional.empty();
+
+        if (node.equals(data)) return Optional.of(node.value);
+
+        var left = this.traversalPreOrder(node.left, data);
+
+        if (left.isPresent()) return left;
+
+        return this.traversalPreOrder(node.right, data);
+    }
+
+    /**
+     * <h2>
+     * Recursive post order traversal
+     * </h2>
+     *
+     * <p>
+     * Post order search: left -> right -> root
+     * </p>
+     *
+     * @param node current node
+     * @param data value to be searched
+     * @return Optional<T> An optional of the value to be searched
+     * @see java.util.Optional
+     */
+
+    private Optional<T> traversalPostOrder(Node node, T data) {
+        if (Objects.isNull(node)) return Optional.empty();
+
+        var left = this.traversalPostOrder(node.left, data);
+
+        if (left.isPresent()) return left;
+
+        var right = this.traversalPostOrder(node.right, data);
+
+        if (right.isPresent()) return right;
+
+        if (node.equals(data)) return Optional.of(node.value);
+
+        return Optional.empty();
     }
 
     private class Node {
