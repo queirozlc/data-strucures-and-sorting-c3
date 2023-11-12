@@ -2,18 +2,17 @@ package sorting;
 
 import java.io.Serial;
 import java.util.LinkedList;
-import java.util.List;
 
 public class SortedLinkedList<T extends Comparable<T>> extends LinkedList<T> {
 
     @Serial
     private static final long serialVersionUID = 1L;
 
-    public List<T> quickSort() {
-        return quickSort(0, size() - 1);
+    public void quickSort() {
+        this.quickSort(0, size() - 1);
     }
 
-    private List<T> quickSort(int left, int right) {
+    private void quickSort(int left, int right) {
         int pivot = (left + right) / 2;
         int i = left;
         int j = right;
@@ -31,8 +30,6 @@ public class SortedLinkedList<T extends Comparable<T>> extends LinkedList<T> {
 
         if (left < j) quickSort(left, j);
         if (i < right) quickSort(i, right);
-
-        return this;
     }
 
     private void swap(int i, int j) {
