@@ -30,8 +30,17 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
     @Override
     public boolean delete(T data) {
-        return false;
+        if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
+
+        if (isEmpty()) return false;
+
+        return this.delete(this.root, data).map(node -> {
+            this.root = node;
+            this.size--;
+            return true;
+        }).orElse(false);
     }
+
 
     @Override
     public int size() {
@@ -85,6 +94,35 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
             node.right = this.insert(node.right, data).orElseGet(() -> new Node<>(data));
         } else {
             return Optional.empty();
+        }
+
+        node.updateHeight();
+        return applyRotation(node);
+    }
+
+    private Optional<Node<T>> delete(Node<T> node, T data) {
+        if (Objects.isNull(node)) return Optional.empty();
+
+        if (node.biggerThan(data)) {
+            node.left = this.delete(node.left, data).orElse(null);
+        } else if (node.lowerThan(data)) {
+            node.right = this.delete(node.right, data).orElse(null);
+        } else {
+            if (Objects.isNull(node.left) && Objects.isNull(node.right)) {
+                return Optional.empty();
+            } else if (Objects.isNull(node.left)) {
+                return Optional.of(node.right);
+            } else if (Objects.isNull(node.right)) {
+                return Optional.of(node.left);
+            } else {
+                // search the greater node in the left subtree
+                Node<T> greaterNode = node.left;
+                while (Objects.nonNull(greaterNode.right)) {
+                    greaterNode = greaterNode.right;
+                }
+                node.data = greaterNode.data;
+                node.left = this.delete(node.left, greaterNode.data).orElse(null);
+            }
         }
 
         node.updateHeight();
@@ -188,6 +226,10 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
         public int height(Node<T> node) {
             return Objects.isNull(node) ? 0 : node.height;
+        }
+
+        public boolean lowerThan(T data) {
+            return this.data.compareTo(data) < 0;
         }
     }
 }
