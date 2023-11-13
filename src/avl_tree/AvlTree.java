@@ -59,7 +59,7 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     @Override
-    public T search(T data) {
+    public T traversal(T data) {
         return null;
     }
 

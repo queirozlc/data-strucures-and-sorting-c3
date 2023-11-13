@@ -25,7 +25,7 @@ public interface Tree<T extends Comparable<T>> {
 
     void clear();
 
-    T search(T data);
+    T traversal(T data);
 
     boolean isEmpty();
 }

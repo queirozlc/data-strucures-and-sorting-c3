@@ -56,7 +56,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
         if (isEmpty()) return false;
 
-        return Objects.nonNull(this.search(data));
+        return Objects.nonNull(this.traversal(data));
     }
 
     @Override
@@ -67,7 +67,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
     /**
      * <h2>
-     * Search method - This Method perform a in order search in the tree
+     * Search method - This Method perform an in order search in the tree
      * </h2>
      *
      * <p>
@@ -79,7 +79,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
      * @see <a href="https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)">In order search</a>
      */
     @Override
-    public T search(T data) {
+    public T traversal(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
         if (isEmpty()) return null;
