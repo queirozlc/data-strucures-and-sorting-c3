@@ -49,7 +49,7 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
     @Override
     public boolean contains(T data) {
-        return false;
+        return Objects.nonNull(this.traversal(data));
     }
 
     @Override
@@ -58,10 +58,40 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
         this.size = 0;
     }
 
+    /**
+     * <h2>
+     * Traversal the tree with the given data
+     * </h2>
+     *
+     * <p>
+     * There's mainly three ways to traversal a tree:
+     * </p>
+     *
+     * <ul>
+     *     <li>Pre-order traversal</li>
+     *     <li>In-order traversal</li>
+     *     <li>Post-order traversal</li>
+     * </ul>
+     *
+     * <p>
+     *     This method performs a pre-order traversal. Which behavior is:
+     * </p>
+     *
+     * <ul>
+     *     <li>Visit the root</li>
+     *     <li>Traverse the left subtree</li>
+     *     <li>Traverse the right subtree</li>
+     * </ul>
+     *
+     * @param data The data to be traversal
+     * @return The data after traversal
+     */
     @Override
     public T traversal(T data) {
-        return null;
+        if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
+        return this.traversal(this.root, data).orElse(null);
     }
+
 
     @Override
     public boolean isEmpty() {
@@ -169,6 +199,17 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
         node.updateHeight();
         newRoot.updateHeight();
         return newRoot;
+    }
+
+    private Optional<T> traversal(Node<T> root, T data) {
+        if (Objects.isNull(root)) return Optional.empty();
+
+        if (root.data.equals(data)) return Optional.of(root.data);
+
+        Optional<T> left = this.traversal(root.left, data);
+        if (left.isPresent()) return left;
+
+        return this.traversal(root.right, data);
     }
 
 
