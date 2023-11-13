@@ -253,14 +253,6 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
             return this.data.compareTo(data) > 0;
         }
 
-        public void addLeft(Node<T> tNode) {
-            this.left = tNode;
-        }
-
-        public void addRight(Node<T> tNode) {
-            this.right = tNode;
-        }
-
         public void updateHeight() {
             this.height = Math.max(height(this.left), height(this.right)) + 1;
         }
