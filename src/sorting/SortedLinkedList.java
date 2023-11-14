@@ -3,6 +3,7 @@ package sorting;
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class SortedLinkedList<T extends Comparable<T>> {
 
@@ -141,6 +142,22 @@ public class SortedLinkedList<T extends Comparable<T>> {
         this.tail = this.tail.next;
         this.size++;
         return this.size > 1;
+    }
+
+    /**
+     * <h2>
+     * Stream the list
+     * </h2>
+     *
+     * <p>
+     * Java Stream API is a very powerful tool to work with collections. This method will return a stream of the list to be able to use the Stream API for handle functional operations in the list.
+     * </p>
+     *
+     * @return a stream of the list
+     * @see java.util.stream.Stream Stream API
+     */
+    public Stream<T> stream() {
+        return Stream.iterate(this.head, Objects::nonNull, node -> node.next).map(node -> node.data);
     }
 
     /**
