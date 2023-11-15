@@ -1,11 +1,13 @@
 package sorting;
 
+import shared.DataStructure;
+
 import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
-public class SortedLinkedList<T extends Comparable<T>> {
+public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<T> {
 
     private Node<T> head;
     private int size;
@@ -62,25 +64,6 @@ public class SortedLinkedList<T extends Comparable<T>> {
         this.head = null;
         this.tail = null;
         this.size = 0;
-    }
-
-
-    /**
-     * <h2>
-     * Traverse the list with the given data
-     * </h2>
-     *
-     * <p>
-     * Implementation of the traversal method. This method will traverse the list with the given data. The traversal method will return the data if the data is found, otherwise, it will return null.
-     * </p>
-     *
-     * @param current  the current node
-     * @param consumer the consumer function to be applied at each node
-     */
-    private void forEach(Node<T> current, Consumer<T> consumer) {
-        if (Objects.isNull(current)) return;
-        consumer.accept(current.data);
-        this.forEach(current.next, consumer);
     }
 
     public boolean isEmpty() {
