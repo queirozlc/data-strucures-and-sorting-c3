@@ -1,9 +1,10 @@
 package shared;
 
-public record BankForm(Long agency, Long account, double balance, Long ownerCpf) implements Comparable<BankForm> {
+public record BankAccount(Long agency, Long account, double balance, Long ownerCpf) implements Comparable<BankAccount> {
     @Override
-    public int compareTo(BankForm o) {
-        return this.agency.compareTo(o.agency);
+    public int compareTo(BankAccount o) {
+        // compare by agency and account
+        return this.agency.compareTo(o.agency) + this.account.compareTo(o.account);
     }
 
     @Override
