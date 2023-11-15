@@ -4,6 +4,7 @@ import shared.Tree;
 
 import java.util.Objects;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
@@ -16,7 +17,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     @Override
-    public boolean insert(T data) {
+    public boolean add(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
         if (isEmpty()) {
@@ -33,7 +34,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     @Override
-    public boolean delete(T data) {
+    public boolean remove(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
         if (isEmpty()) return false;
@@ -264,6 +265,81 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         if (node.equals(data)) return Optional.of(node.value);
 
         return Optional.empty();
+    }
+
+    @Override
+    public String toString() {
+        // build a string representation of the tree
+        StringBuilder sb = new StringBuilder();
+        this.buildString(this.root, sb);
+        return sb.toString();
+    }
+
+    private void buildString(Node root, StringBuilder sb) {
+        // build with circles to and arrows to represent the tree
+        if (Objects.isNull(root)) return;
+        sb.append(root.value).append(" ");
+        if (Objects.nonNull(root.left)) {
+            sb.append("left -> ").append(root.left.value).append(" ");
+        }
+        if (Objects.nonNull(root.right)) {
+            sb.append("right -> ").append(root.right.value).append(" ");
+        }
+        sb.append("\n");
+        this.buildString(root.left, sb);
+        this.buildString(root.right, sb);
+    }
+
+    /**
+     * <h2>
+     * Perform a in order traversal in the tree applying the consumer function
+     * </h2>
+     *
+     * <p>
+     * The in order traversal flow is: left -> root -> right
+     * </p>
+     *
+     * <p>
+     * For each node in the tree, the consumer function will be applied to execute some logic
+     * </p>
+     *
+     * <p>
+     * Example:
+     * </p>
+     *
+     * <pre>
+     *     {@code
+     *     var tree = new BinaryTree<Integer>();
+     *     tree.add(5);
+     *     tree.add(3);
+     *     tree.add(7);
+     *     tree.add(2);
+     *     tree.add(4);
+     *     tree.add(6);
+     *     tree.add(8);
+     *     tree.inOrderTraversal(System.out::println);
+     *     }
+     * </pre>
+     *
+     * <p>
+     * Consumer functions could be exemplified by the {@code forEach} method of the {@code java.util.stream.Stream} class
+     * </p>
+     *
+     * @param consumer function to be applied
+     * @see java.util.function.Consumer
+     * @see <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#forEach-java.util.function.Consumer-">Stream forEach</a>
+     * @see <a href="https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)">In order traversal</a>
+     * @see java.util.stream.Stream
+     */
+    public void inOrderTraversal(Consumer<T> consumer) {
+        this.inOrderTraversal(this.root, consumer);
+    }
+
+    private void inOrderTraversal(Node root, Consumer<T> consumer) {
+        if (Objects.isNull(root)) return;
+        this.inOrderTraversal(root.left, consumer);
+        consumer.accept(root.value);
+        this.inOrderTraversal(root.right, consumer);
     }
 
     private class Node {

@@ -1,6 +1,8 @@
 package shared;
 
 
+import java.util.function.Consumer;
+
 /**
  * <h2>
  * Tree interface
@@ -13,19 +15,8 @@ package shared;
  * @param <T> generic type
  * @author lucasqueiroz
  */
-public interface Tree<T extends Comparable<T>> {
-
-    boolean insert(T data);
-
-    boolean delete(T data);
-
-    int size();
-
-    boolean contains(T data);
-
-    void clear();
-
+public interface Tree<T extends Comparable<T>> extends DataStructure<T> {
     T traversal(T data);
 
-    boolean isEmpty();
+    void inOrderTraversal(Consumer<T> consumer);
 }

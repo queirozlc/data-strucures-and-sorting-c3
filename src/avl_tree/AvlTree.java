@@ -4,6 +4,7 @@ import shared.Tree;
 
 import java.util.Objects;
 import java.util.Optional;
+import java.util.function.Consumer;
 
 public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
@@ -90,6 +91,18 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     public T traversal(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
         return this.traversal(this.root, data).orElse(null);
+    }
+
+    @Override
+    public void inOrderTraversal(Consumer<T> consumer) {
+        this.inOrderTraversal(this.root, consumer);
+    }
+
+    private void inOrderTraversal(Node<T> node, Consumer<T> consumer) {
+        if (Objects.isNull(node)) return;
+        this.inOrderTraversal(node.left, consumer);
+        consumer.accept(node.data);
+        this.inOrderTraversal(node.right, consumer);
     }
 
 
