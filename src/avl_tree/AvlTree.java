@@ -12,7 +12,7 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
 
     @Override
-    public boolean insert(T data) {
+    public boolean add(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
         if (isEmpty()) {
@@ -29,7 +29,7 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     }
 
     @Override
-    public boolean delete(T data) {
+    public boolean remove(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
         if (isEmpty()) return false;
