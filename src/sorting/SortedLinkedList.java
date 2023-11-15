@@ -395,6 +395,29 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
         return builder.toString();
     }
 
+    public T[] toArray() {
+        var array = (T[]) new Comparable[this.size];
+        var current = this.head;
+        int i = 0;
+
+        while (current != null) {
+            array[i++] = current.data;
+            current = current.next;
+        }
+
+        return array;
+    }
+
+    public void forEach(Consumer<? super T> action) {
+        Objects.requireNonNull(action);
+        var current = this.head;
+
+        while (current != null) {
+            action.accept(current.data);
+            current = current.next;
+        }
+    }
+
     private static class Node<T> {
         private T data;
         private Node<T> next;
