@@ -2,12 +2,14 @@ package sorting;
 
 import shared.DataStructure;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Objects;
+import java.util.Random;
 import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.stream.Stream;
 
 public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<T> {
+    private static final Random RANDOM = new Random();
 
     private Node<T> head;
     private int size;
@@ -17,37 +19,6 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
         this.head = null;
         this.tail = null;
         this.size = 0;
-    }
-
-    // factory methods
-
-    public static <E extends Comparable<E>> SortedLinkedList<E> fromArray(E[] array) {
-        if (Objects.isNull(array)) throw new IllegalArgumentException("Array cannot be null");
-        var list = new SortedLinkedList<E>();
-        list.addAll(Arrays.asList(array));
-        return list;
-    }
-
-    public static <E extends Comparable<E>> SortedLinkedList<E> fromList(List<E> list) {
-        if (Objects.isNull(list)) throw new IllegalArgumentException("List cannot be null");
-        var linkedList = new SortedLinkedList<E>();
-        linkedList.addAll(list);
-        return linkedList;
-    }
-
-    public static <E extends Comparable<E>> SortedLinkedList<E> fromCollection(Collection<E> collection) {
-        if (Objects.isNull(collection)) throw new IllegalArgumentException("Collection cannot be null");
-        var linkedList = new SortedLinkedList<E>();
-        linkedList.addAll(collection);
-        return linkedList;
-    }
-
-    @SafeVarargs
-    public static <E extends Comparable<E>> SortedLinkedList<E> of(E... elements) {
-        if (Objects.isNull(elements)) throw new IllegalArgumentException("Elements cannot be null");
-        SortedLinkedList<E> linkedList = new SortedLinkedList<>();
-        linkedList.addAll(Arrays.asList(elements));
-        return linkedList;
     }
 
 
@@ -197,34 +168,6 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
 
     /**
      * <h2>
-     * Remove elements based on the given predicate
-     * </h2>
-     *
-     * <p>
-     * This method will remove the elements that matches with the given predicate. Predicate is a function that receives an element and returns true or false based on the given condition.
-     * </p>
-     *
-     * @param filter function to be applied to check if the element matches with the given condition
-     * @return true if the elements were removed, false otherwise
-     * @throws IllegalArgumentException if the filter function is null
-     * @see java.util.function.Predicate
-     */
-    public boolean removeIf(Predicate<? super T> filter) {
-        if (Objects.isNull(filter)) throw new IllegalArgumentException("Filter cannot be null");
-        var current = this.head;
-
-        while (current != null) {
-            if (filter.test(current.data)) {
-                this.remove(current.data);
-            }
-            current = current.next;
-        }
-
-        return true;
-    }
-
-    /**
-     * <h2>
      * Get the size of the list
      * </h2>
      *
@@ -239,28 +182,31 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
     }
 
     public void shellSort() {
-        int h = 1;
-        int n = this.size;
-
-        while (h < n) h = h * 3 + 1;
-
+        int i;
+        int j;
+        int h;
+        T temp;
+        h = 1;
+        do {
+            h = 3 * h + 1;
+        } while (h < this.size);
         do {
             h = h / 3;
-            for (var i = h; i < n; i++) {
-                T value = get(i);
-                int j = i - h;
-
-                while (j >= 0 && value.compareTo(get(j)) < 0) {
-                    set(j + h, get(j));
+            for (i = h; i < this.size; i++) {
+                temp = this.get(i);
+                j = i;
+                while (this.get(j - h).compareTo(temp) > 0) {
+                    this.set(j, this.get(j - h));
                     j = j - h;
+                    if (j < h) {
+                        break;
+                    }
                 }
-
-                set(j + h, value);
+                this.set(j, temp);
             }
-
         } while (h != 1);
-
     }
+
 
     private void quickSort(int left, int right) {
         int pivot = (left + right) / 2;
@@ -307,33 +253,6 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
         if (Objects.isNull(current)) throw new IllegalArgumentException("Index out of bounds");
 
         return current.data;
-    }
-
-    /**
-     * <h2>
-     * Find the given data in the list
-     * </h2>
-     *
-     * <p>
-     * This method will find the given data in the list. If the data is found, the method will return an optional of the data, otherwise, it will return an empty optional.
-     * </p>
-     *
-     * @param data the data to be found
-     * @return an optional of the data if the data is found, otherwise, it will return an empty optional
-     * @throws IllegalArgumentException if the data is null
-     * @see java.util.Optional
-     */
-    public Optional<T> find(T data) {
-        if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
-
-        var current = this.head;
-
-        while (current != null) {
-            if (current.data.compareTo(data) == 0) return Optional.of(current.data);
-            current = current.next;
-        }
-
-        return Optional.empty();
     }
 
     /**
@@ -395,6 +314,16 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
         return builder.toString();
     }
 
+    public void forEach(Consumer<? super T> action) {
+        Objects.requireNonNull(action);
+        var current = this.head;
+
+        while (current != null) {
+            action.accept(current.data);
+            current = current.next;
+        }
+    }
+
     public T[] toArray() {
         var array = (T[]) new Comparable[this.size];
         var current = this.head;
@@ -406,16 +335,6 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
         }
 
         return array;
-    }
-
-    public void forEach(Consumer<? super T> action) {
-        Objects.requireNonNull(action);
-        var current = this.head;
-
-        while (current != null) {
-            action.accept(current.data);
-            current = current.next;
-        }
     }
 
     private static class Node<T> {

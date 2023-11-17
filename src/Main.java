@@ -1,17 +1,10 @@
-import binary_tree.BinaryTree;
+import avl_tree.AvlTree;
 import shared.*;
 import sorting.SortedLinkedList;
 
-import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.function.Consumer;
 
 public class Main {
-
     public static void main(String[] args) throws FileNotFoundException {
         // In package shared.resources, there are some files
         // we have a CPF.txt file with 400 CPFs and 5 other files that simulates bank accounts
@@ -48,87 +41,59 @@ public class Main {
         // with the respective number of bank accounts, example:
         // cpf_avl_500.txt, cpf_btree_100.txt, cpf_linked-list_5000.txt and cpf_linked-hash-table_10000.txt
 
-        var cpfBinaryTreeHandler = new CpfHandler(new BinaryTree<>());
+        var title = "============ ARVORE AVL ============\n\n";
+        var cpfHandler = new CpfHandler(new AvlTree<>());
+        var bankAccount500AvlTreeHandler = new BankAccountHandler(new AvlTree<>(), AccountFileOptions.CONTA_500);
+
+        var bankAccount1000AvlTreeHandler = new BankAccountHandler(new AvlTree<>(), AccountFileOptions.CONTA_1000);
+
+        var bankAccount5000AvlTreeHandler = new BankAccountHandler(new AvlTree<>(), AccountFileOptions.CONTA_5000);
+        var bankAccount10000AvlTreeHandler = new BankAccountHandler(new AvlTree<>(), AccountFileOptions.CONTA_10000);
+        var bankAccount50000AvlTreeHandler = new BankAccountHandler(new AvlTree<>(), AccountFileOptions.CONTA_50000);
+
+        FileProcessor.processFile(cpfHandler, bankAccount500AvlTreeHandler, bankAccount1000AvlTreeHandler, bankAccount5000AvlTreeHandler, bankAccount10000AvlTreeHandler, bankAccount50000AvlTreeHandler);
+
+
+        var cpfAvlTree = (AvlTree<Long>) cpfHandler.dataStructure();
+        var bankAccount500AvlTree = (AvlTree<BankAccount>) bankAccount500AvlTreeHandler.dataStructure();
+        var bankAccount1000AvlTree = (AvlTree<BankAccount>) bankAccount1000AvlTreeHandler.dataStructure();
+        var bankAccount5000AvlTree = (AvlTree<BankAccount>) bankAccount5000AvlTreeHandler.dataStructure();
+        var bankAccount10000AvlTree = (AvlTree<BankAccount>) bankAccount10000AvlTreeHandler.dataStructure();
+        var bankAccount50000AvlTree = (AvlTree<BankAccount>) bankAccount50000AvlTreeHandler.dataStructure();
+
+
+        new GroupProcessor(bankAccount500AvlTree)
+                .process(cpfAvlTree::inOrderTraversal, bankAccount500AvlTree::inOrderTraversal, title, "resultado_avl500.txt");
+
+        new GroupProcessor(bankAccount1000AvlTree)
+                .process(cpfAvlTree::inOrderTraversal, bankAccount1000AvlTree::inOrderTraversal, title, "resultado_avl1000.txt");
+
+        new GroupProcessor(bankAccount5000AvlTree)
+                .process(cpfAvlTree::inOrderTraversal, bankAccount5000AvlTree::inOrderTraversal, title, "resultado_avl5000.txt");
+
+        new GroupProcessor(bankAccount10000AvlTree)
+                .process(cpfAvlTree::inOrderTraversal, bankAccount10000AvlTree::inOrderTraversal, title, "resultado_avl10000.txt");
+
+        new GroupProcessor(bankAccount50000AvlTree)
+                .process(cpfAvlTree::inOrderTraversal, bankAccount50000AvlTree::inOrderTraversal, title, "resultado_avl50000.txt");
+
+        cpfAvlTree.clear();
+
         var cpfLinkedListHandler = new CpfHandler(new SortedLinkedList<>());
+        var bankAccountLinkedListHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_50000);
 
-        FileProcessor.processFile("CPF.txt", cpfBinaryTreeHandler, cpfLinkedListHandler);
+        FileProcessor.processFile(cpfLinkedListHandler, bankAccountLinkedListHandler);
 
-        var bankAccount500BinaryTreeHandler = new BankAccount500Handler(new BinaryTree<>());
+        var cpfLinkedList = (SortedLinkedList<Long>) cpfLinkedListHandler.dataStructure();
+        var bankAccountLinkedList = (SortedLinkedList<BankAccount>) bankAccountLinkedListHandler.dataStructure();
 
-        var bankAccount500LinkedListHandler = new BankAccount500Handler(new SortedLinkedList<>());
+        title = "============ LISTA ENCADEADA USANDO QUICK SORT ============\n\n";
 
-        FileProcessor.processFile("conta500.txt", bankAccount500BinaryTreeHandler, bankAccount500LinkedListHandler);
+        QuickSortMultiThreading.sort(cpfLinkedList);
+        QuickSortMultiThreading.sort(bankAccountLinkedList);
 
-        groupByCpfTree((Tree<Long>) cpfBinaryTreeHandler.getStructure(), (Tree<BankAccount>) bankAccount500BinaryTreeHandler.getStructure());
-
-        groupByCpfLinkedList((SortedLinkedList<Long>) cpfLinkedListHandler.getStructure(), (SortedLinkedList<BankAccount>) bankAccount500LinkedListHandler.getStructure(), SortedLinkedList::quickSort, s -> FileOutputUtils.write("cpf_linked-list_quicksort500.txt", s, "============ CPF Linked List Using Quick Sort ============\n\n"));
-    }
-
-    private static void groupByCpfLinkedList(SortedLinkedList<Long> keys, SortedLinkedList<BankAccount> values, Consumer<SortedLinkedList<?>> sortFunction, Consumer<String> writeFunction) {
-        sortFunction.accept(keys);
-        sortFunction.accept(values);
-        var sb = new StringBuilder();
-        keys.stream().forEach(key -> {
-            sb.append("CPF: ").append(key).append("\n");
-            AtomicReference<Double> totalBalance = new AtomicReference<>(0.0);
-            AtomicBoolean found = new AtomicBoolean(false);
-            values.stream().forEach(value -> {
-                if (key.compareTo(value.ownerCpf()) == 0) {
-                    sb.append("agência: ").append(value.agency()).append(" conta: ").append(value.account()).append(" saldo: ").append(value.balance()).append("\n");
-                    totalBalance.updateAndGet(v -> v + value.balance());
-                    found.set(true);
-                }
-            });
-            if (!found.get()) {
-                sb.append("INEXISTENTE\n");
-            }
-            if (found.get()) {
-                sb.append("Saldo total: ").append(totalBalance.get()).append("\n\n");
-            }
-
-            sb.append("\n");
-        });
-
-        writeFunction.accept(sb.toString());
-    }
-
-    public static void groupByCpfTree(Tree<Long> cpfTree, Tree<BankAccount> bankAccountTree) {
-        var sb = new StringBuilder();
-        cpfTree.inOrderTraversal(key -> {
-            sb.append("CPF: ").append(key).append("\n");
-            AtomicReference<Double> totalBalance = new AtomicReference<>(0.0);
-            AtomicBoolean found = new AtomicBoolean(false);
-            bankAccountTree.inOrderTraversal(value -> {
-                if (key.compareTo(value.ownerCpf()) == 0) {
-                    sb.append("agência: ").append(value.agency()).append(" conta: ").append(value.account()).append(" saldo: ").append(value.balance()).append("\n");
-                    totalBalance.updateAndGet(v -> v + value.balance());
-                    found.set(true);
-                }
-            });
-            if (!found.get()) {
-                sb.append("INEXISTENTE\n");
-            }
-            if (found.get()) {
-                sb.append("Saldo total: ").append(totalBalance.get()).append("\n\n");
-            }
-
-            sb.append("\n");
-        });
-        FileOutputUtils.write("cpf_btree_500.txt", sb.toString(), "============ CPF Binary Tree ============\n");
+        new GroupProcessor(bankAccountLinkedList)
+                .process(cpfLinkedList::forEach, bankAccountLinkedList::forEach, title, "resultado_linked-list.txt");
     }
 }
 
-class FileOutputUtils {
-
-    static void write(String fileName, String content, String title) {
-        var userDir = System.getProperty("user.dir");
-        var separator = System.getProperty("file.separator");
-
-        try (var writer = new BufferedWriter(new FileWriter(fileName))) {
-            writer.write(title);
-            writer.write(content);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-}

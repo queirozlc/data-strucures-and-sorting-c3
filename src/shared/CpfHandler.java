@@ -1,19 +1,16 @@
 package shared;
 
-public class CpfHandler implements DataStructureHandler<Long> {
-    private final DataStructure<Long> dataStructure;
-
-    public CpfHandler(DataStructure<Long> dataStructure) {
-        this.dataStructure = dataStructure;
-    }
+public record CpfHandler(DataStructure<Long> dataStructure) implements DataStructureHandler<Long> {
 
     @Override
     public void processLine(String line) {
-        dataStructure.add(Long.parseLong(line));
+        if (!dataStructure.contains(Long.parseLong(line))) {
+            dataStructure.add(Long.parseLong(line));
+        }
     }
 
     @Override
-    public DataStructure<Long> getStructure() {
-        return dataStructure;
+    public String getFileName() {
+        return "CPF.txt";
     }
 }

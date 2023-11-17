@@ -8,7 +8,7 @@ import java.util.function.Consumer;
 
 public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
 
-    private Node root;
+    private Node<T> root;
     private int size;
 
     public BinaryTree() {
@@ -21,7 +21,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
 
         if (isEmpty()) {
-            this.root = new Node(data);
+            this.root = new Node<>(data);
             this.size++;
             return true;
         }
@@ -88,32 +88,6 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return this.traversalInOrder(this.root, data);
     }
 
-    /**
-     * <h2>
-     * Search method - This Method perform a pre order search in the tree
-     * </h2>
-     *
-     * <p>
-     * This method perform a pre order search in the tree, returning an optional of the value to be searched.
-     * </p>
-     *
-     * <p>
-     * Pre order search: root -> left -> right
-     * </p>
-     *
-     * @param data value to be searched
-     * @return Optional<T> An optional of the value to be searched
-     * @see java.util.Optional
-     * @see <a href="https://en.wikipedia.org/wiki/Tree_traversal#Pre-order_(NLR)">Pre order search</a>
-     */
-    public Optional<T> searchPreOrder(T data) {
-        if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
-
-        if (isEmpty()) return null;
-
-        return this.traversalPreOrder(this.root, data);
-    }
-
     @Override
     public boolean isEmpty() {
         return this.root == null;
@@ -133,7 +107,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
      * @return Optional<Node> node to be deleted
      * @see java.util.Optional
      */
-    private Optional<Node> delete(Node node, T data) {
+    private Optional<Node<T>> delete(Node<T> node, T data) {
         if (Objects.isNull(node)) return Optional.empty();
 
         if (node.biggerThan(data)) {
@@ -156,7 +130,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return Optional.of(node);
     }
 
-    private Node findMax(Node node, Node max) {
+    private Node<T> findMax(Node<T> node, Node<T> max) {
         if (Objects.isNull(max.right)) {
             node.setValue(max.value);
             return max.left;
@@ -166,12 +140,10 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return max;
     }
 
-    private boolean insert(Node node, T data) {
-        if (node.equals(data)) return false;
-
+    private boolean insert(Node<T> node, T data) {
         if (node.biggerThan(data)) {
             if (Objects.isNull(node.left)) {
-                node.addLeft(new Node(data));
+                node.addLeft(new Node<>(data));
                 return true;
             }
 
@@ -179,7 +151,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         }
 
         if (Objects.isNull(node.right)) {
-            node.addRight(new Node(data));
+            node.addRight(new Node<>(data));
             return true;
         }
 
@@ -198,73 +170,16 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
      * @param data value to be searched
      * @return T value to be searched
      */
-    private T traversalInOrder(Node node, T data) {
+    private T traversalInOrder(Node<T> node, T data) {
         if (Objects.isNull(node)) return null;
 
         var left = this.traversalInOrder(node.left, data);
 
         if (Objects.nonNull(left)) return left;
 
-        if (node.equals(data)) return node.value;
+        if (node.equalsTo(data)) return node.value;
 
         return this.traversalInOrder(node.right, data);
-    }
-
-    /**
-     * <h2>
-     * Recursive pre order traversal
-     * </h2>
-     *
-     * <p>
-     * Pre order search: root -> left -> right
-     * </p>
-     *
-     * @param node current node
-     * @param data value to be searched
-     * @return Optional<T> An optional of the value to be searched
-     * @see java.util.Optional
-     */
-    private Optional<T> traversalPreOrder(Node node, T data) {
-        if (Objects.isNull(node)) return Optional.empty();
-
-        if (node.equals(data)) return Optional.of(node.value);
-
-        var left = this.traversalPreOrder(node.left, data);
-
-        if (left.isPresent()) return left;
-
-        return this.traversalPreOrder(node.right, data);
-    }
-
-    /**
-     * <h2>
-     * Recursive post order traversal
-     * </h2>
-     *
-     * <p>
-     * Post order search: left -> right -> root
-     * </p>
-     *
-     * @param node current node
-     * @param data value to be searched
-     * @return Optional<T> An optional of the value to be searched
-     * @see java.util.Optional
-     */
-
-    private Optional<T> traversalPostOrder(Node node, T data) {
-        if (Objects.isNull(node)) return Optional.empty();
-
-        var left = this.traversalPostOrder(node.left, data);
-
-        if (left.isPresent()) return left;
-
-        var right = this.traversalPostOrder(node.right, data);
-
-        if (right.isPresent()) return right;
-
-        if (node.equals(data)) return Optional.of(node.value);
-
-        return Optional.empty();
     }
 
     @Override
@@ -275,7 +190,7 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         return sb.toString();
     }
 
-    private void buildString(Node root, StringBuilder sb) {
+    private void buildString(Node<T> root, StringBuilder sb) {
         // build with circles to and arrows to represent the tree
         if (Objects.isNull(root)) return;
         sb.append(root.value).append(" ");
@@ -335,17 +250,17 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
         this.inOrderTraversal(this.root, consumer);
     }
 
-    private void inOrderTraversal(Node root, Consumer<T> consumer) {
+    private void inOrderTraversal(Node<T> root, Consumer<T> consumer) {
         if (Objects.isNull(root)) return;
         this.inOrderTraversal(root.left, consumer);
         consumer.accept(root.value);
         this.inOrderTraversal(root.right, consumer);
     }
 
-    private class Node {
+    private static class Node<T extends Comparable<T>> {
         private T value;
-        private Node left;
-        private Node right;
+        private Node<T> left;
+        private Node<T> right;
 
         public Node(T value) {
             this.value = value;
@@ -361,15 +276,15 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
             return this.value.compareTo(data) > 0;
         }
 
-        public boolean equals(T data) {
+        public boolean equalsTo(T data) {
             return this.value.compareTo(data) == 0;
         }
 
-        public void addLeft(Node node) {
+        public void addLeft(Node<T> node) {
             this.left = node;
         }
 
-        public void addRight(Node node) {
+        public void addRight(Node<T> node) {
             this.right = node;
         }
 

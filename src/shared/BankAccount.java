@@ -4,7 +4,7 @@ public record BankAccount(Long agency, Long account, double balance, Long ownerC
     @Override
     public int compareTo(BankAccount o) {
         // compare by agency and account
-        return this.agency.compareTo(o.agency) + this.account.compareTo(o.account);
+        return this.agency.compareTo(o.agency);
     }
 
     @Override

@@ -87,7 +87,6 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
      * @param data The data to be traversal
      * @return The data after traversal
      */
-    @Override
     public T traversal(T data) {
         if (Objects.isNull(data)) throw new IllegalArgumentException("Data cannot be null");
         return this.traversal(this.root, data).orElse(null);
@@ -133,7 +132,7 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
         if (node.biggerThan(data)) {
             node.left = this.insert(node.left, data).orElseGet(() -> new Node<>(data));
-        } else if (node.data.compareTo(data) < 0) {
+        } else if (node.data.compareTo(data) <= 0) {
             node.right = this.insert(node.right, data).orElseGet(() -> new Node<>(data));
         } else {
             return Optional.empty();
