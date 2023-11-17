@@ -89,8 +89,8 @@ public class Main {
 
         title = "============ LISTA ENCADEADA USANDO QUICK SORT ============\n\n";
 
-        QuickSortMultiThreading.sort(cpfLinkedList);
-        QuickSortMultiThreading.sort(bankAccountLinkedList);
+        cpfLinkedList.quickSortAsync();
+        bankAccountLinkedList.quickSortAsync();
 
         new GroupProcessor(bankAccountLinkedList)
                 .process(cpfLinkedList::forEach, bankAccountLinkedList::forEach, title, "resultado_linked-list.txt");
