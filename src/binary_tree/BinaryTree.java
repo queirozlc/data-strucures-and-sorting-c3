@@ -246,7 +246,8 @@ public class BinaryTree<T extends Comparable<T>> implements Tree<T> {
      * @see <a href="https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR)">In order traversal</a>
      * @see java.util.stream.Stream
      */
-    public void inOrderTraversal(Consumer<T> consumer) {
+    @Override
+    public void forEach(Consumer<T> consumer) {
         this.inOrderTraversal(this.root, consumer);
     }
 

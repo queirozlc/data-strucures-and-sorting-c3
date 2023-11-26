@@ -10,8 +10,6 @@ import java.util.function.Consumer;
 import java.util.stream.Stream;
 
 public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<T> {
-    private static final Random RANDOM = new Random();
-
     private Node<T> head;
     private int size;
     private Node<T> tail;
@@ -324,7 +322,7 @@ public class SortedLinkedList<T extends Comparable<T>> implements DataStructure<
         return builder.toString();
     }
 
-    public void forEach(Consumer<? super T> action) {
+    public void forEach(Consumer<T> action) {
         Objects.requireNonNull(action);
         var current = this.head;
 

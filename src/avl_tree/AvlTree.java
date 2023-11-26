@@ -92,11 +92,6 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
         return this.traversal(this.root, data).orElse(null);
     }
 
-    @Override
-    public void inOrderTraversal(Consumer<T> consumer) {
-        this.inOrderTraversal(this.root, consumer);
-    }
-
     private void inOrderTraversal(Node<T> node, Consumer<T> consumer) {
         if (Objects.isNull(node)) return;
         this.inOrderTraversal(node.left, consumer);
@@ -108,6 +103,11 @@ public class AvlTree<T extends Comparable<T>> implements Tree<T> {
     @Override
     public boolean isEmpty() {
         return this.size == 0;
+    }
+
+    @Override
+    public void forEach(Consumer<T> consumer) {
+        this.inOrderTraversal(this.root, consumer);
     }
 
     /**

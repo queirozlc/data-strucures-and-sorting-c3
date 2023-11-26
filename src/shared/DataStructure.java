@@ -1,5 +1,7 @@
 package shared;
 
+import java.util.function.Consumer;
+
 public interface DataStructure<E extends Comparable<E>> {
 
     boolean add(E data);
@@ -13,4 +15,6 @@ public interface DataStructure<E extends Comparable<E>> {
     void clear();
 
     boolean isEmpty();
+
+    void forEach(Consumer<E> consumer);
 }

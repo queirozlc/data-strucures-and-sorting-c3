@@ -63,19 +63,19 @@ public class Main {
 
 
         new GroupProcessor(bankAccount500AvlTree)
-                .process(cpfAvlTree::inOrderTraversal, bankAccount500AvlTree::inOrderTraversal, title, "resultado_avl500.txt");
+                .process(cpfAvlTree::forEach, bankAccount500AvlTree::forEach, title, "resultado_avl500.txt");
 
         new GroupProcessor(bankAccount1000AvlTree)
-                .process(cpfAvlTree::inOrderTraversal, bankAccount1000AvlTree::inOrderTraversal, title, "resultado_avl1000.txt");
+                .process(cpfAvlTree::forEach, bankAccount1000AvlTree::forEach, title, "resultado_avl1000.txt");
 
         new GroupProcessor(bankAccount5000AvlTree)
-                .process(cpfAvlTree::inOrderTraversal, bankAccount5000AvlTree::inOrderTraversal, title, "resultado_avl5000.txt");
+                .process(cpfAvlTree::forEach, bankAccount5000AvlTree::forEach, title, "resultado_avl5000.txt");
 
         new GroupProcessor(bankAccount10000AvlTree)
-                .process(cpfAvlTree::inOrderTraversal, bankAccount10000AvlTree::inOrderTraversal, title, "resultado_avl10000.txt");
+                .process(cpfAvlTree::forEach, bankAccount10000AvlTree::forEach, title, "resultado_avl10000.txt");
 
         new GroupProcessor(bankAccount50000AvlTree)
-                .process(cpfAvlTree::inOrderTraversal, bankAccount50000AvlTree::inOrderTraversal, title, "resultado_avl50000.txt");
+                .process(cpfAvlTree::forEach, bankAccount50000AvlTree::forEach, title, "resultado_avl50000.txt");
 
         cpfAvlTree.clear();
 

@@ -1,8 +1,6 @@
 package shared;
 
 
-import java.util.function.Consumer;
-
 /**
  * <h2>
  * Tree interface
@@ -18,5 +16,4 @@ import java.util.function.Consumer;
 public interface Tree<T extends Comparable<T>> extends DataStructure<T> {
     T traversal(T data);
 
-    void inOrderTraversal(Consumer<T> consumer);
 }

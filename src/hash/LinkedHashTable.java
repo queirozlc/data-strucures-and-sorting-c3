@@ -102,7 +102,7 @@ public class LinkedHashTable<T extends Comparable<T>> implements DataStructure<T
         return this.tableSize == 0;
     }
 
-    public void forEach(Consumer<? super T> consumer) {
+    public void forEach(Consumer<T> consumer) {
         for (var list : this.table) {
             if (list != null) {
                 list.forEach(Objects.requireNonNull(consumer));
