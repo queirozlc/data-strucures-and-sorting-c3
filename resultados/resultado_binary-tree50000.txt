@@ -1,0 +1,2041 @@
+============ ÁRVORE BINÁRIA DE BUSCA ============
+
+CPF: 00062870929
+agência: 14360 conta: 1003778 saldo: 6627.0
+Saldo total: 6627.0
+
+
+CPF: 00539590066
+agência: 10488 conta: 164643 saldo: 2088.0
+agência: 16277 conta: 134371 saldo: 14198.0
+Saldo total: 16286.0
+
+
+CPF: 00797545499
+agência: 11399 conta: 1038088 saldo: 15680.0
+Saldo total: 15680.0
+
+
+CPF: 00875554093
+agência: 12806 conta: 115946 saldo: -2514.0
+agência: 16039 conta: 1045448 saldo: -528.0
+agência: 19223 conta: 142172 saldo: 6082.0
+Saldo total: 3040.0
+
+
+CPF: 01693348733
+INEXISTENTE
+
+CPF: 02159348949
+agência: 13296 conta: 1095115 saldo: 12749.0
+Saldo total: 12749.0
+
+
+CPF: 02785580720
+agência: 15665 conta: 1098010 saldo: 12328.0
+Saldo total: 12328.0
+
+
+CPF: 03248538259
+agência: 13553 conta: 281369 saldo: 12104.0
+Saldo total: 12104.0
+
+
+CPF: 03575901774
+agência: 17335 conta: 1061466 saldo: 5624.0
+Saldo total: 5624.0
+
+
+CPF: 03667946519
+agência: 13278 conta: 178381 saldo: 15607.0
+Saldo total: 15607.0
+
+
+CPF: 03862925646
+INEXISTENTE
+
+CPF: 04267454289
+INEXISTENTE
+
+CPF: 04310194814
+agência: 13854 conta: 1042428 saldo: 12466.0
+Saldo total: 12466.0
+
+
+CPF: 04733401770
+agência: 19584 conta: 1051826 saldo: 16769.0
+agência: 19681 conta: 138066 saldo: 15378.0
+Saldo total: 32147.0
+
+
+CPF: 04915822299
+agência: 18191 conta: 115008 saldo: 5435.0
+Saldo total: 5435.0
+
+
+CPF: 05261330233
+agência: 18617 conta: 125671 saldo: -530.0
+Saldo total: -530.0
+
+
+CPF: 06033223684
+agência: 18347 conta: 1002827 saldo: 11779.0
+Saldo total: 11779.0
+
+
+CPF: 06240782338
+agência: 13676 conta: 1089978 saldo: 1346.0
+agência: 15975 conta: 1055180 saldo: 2689.0
+Saldo total: 4035.0
+
+
+CPF: 06308280230
+agência: 10803 conta: 110161 saldo: 817.0
+Saldo total: 817.0
+
+
+CPF: 06361703779
+agência: 10012 conta: 1011663 saldo: 10650.0
+agência: 15269 conta: 1094751 saldo: -452.0
+agência: 18035 conta: 132846 saldo: -172.0
+Saldo total: 10026.0
+
+
+CPF: 06475976801
+INEXISTENTE
+
+CPF: 06806810645
+agência: 12670 conta: 1079142 saldo: 6335.0
+Saldo total: 6335.0
+
+
+CPF: 06878654153
+agência: 11302 conta: 202047 saldo: 8511.0
+agência: 16363 conta: 1050840 saldo: 1513.0
+Saldo total: 10024.0
+
+
+CPF: 07162500683
+agência: 11776 conta: 144628 saldo: 16448.0
+agência: 17758 conta: 128081 saldo: 10988.0
+Saldo total: 27436.0
+
+
+CPF: 07227358659
+agência: 11587 conta: 162872 saldo: 3007.0
+Saldo total: 3007.0
+
+
+CPF: 07375047000
+agência: 12568 conta: 1071357 saldo: 2471.0
+agência: 16906 conta: 1036293 saldo: 2780.0
+agência: 18997 conta: 1052694 saldo: -1924.0
+Saldo total: 3327.0
+
+
+CPF: 07744852339
+agência: 10338 conta: 1017572 saldo: 13036.0
+agência: 15087 conta: 299016 saldo: 9880.0
+Saldo total: 22916.0
+
+
+CPF: 07798536623
+agência: 16195 conta: 172803 saldo: 10382.0
+agência: 19927 conta: 1045373 saldo: 10524.0
+Saldo total: 20906.0
+
+
+CPF: 07833563810
+agência: 11675 conta: 166386 saldo: 13988.0
+Saldo total: 13988.0
+
+
+CPF: 08341019171
+agência: 13538 conta: 137202 saldo: 8493.0
+Saldo total: 8493.0
+
+
+CPF: 08520425799
+INEXISTENTE
+
+CPF: 08862092843
+agência: 18322 conta: 173538 saldo: 11469.0
+agência: 18546 conta: 1037315 saldo: 11708.0
+Saldo total: 23177.0
+
+
+CPF: 09108497089
+INEXISTENTE
+
+CPF: 09121334959
+agência: 18766 conta: 172438 saldo: 11208.0
+Saldo total: 11208.0
+
+
+CPF: 09546496577
+agência: 10054 conta: 1077679 saldo: 3549.0
+Saldo total: 3549.0
+
+
+CPF: 09547710372
+agência: 16303 conta: 132787 saldo: 9610.0
+agência: 19848 conta: 127112 saldo: 12305.0
+Saldo total: 21915.0
+
+
+CPF: 09562096364
+agência: 14263 conta: 1086070 saldo: 5024.0
+agência: 17099 conta: 1085524 saldo: -64.0
+Saldo total: 4960.0
+
+
+CPF: 09865709392
+agência: 18881 conta: 130411 saldo: 10206.0
+Saldo total: 10206.0
+
+
+CPF: 10183260564
+agência: 17112 conta: 150061 saldo: 4216.0
+Saldo total: 4216.0
+
+
+CPF: 10805597798
+agência: 15157 conta: 101955 saldo: 14261.0
+agência: 18684 conta: 192949 saldo: 14023.0
+Saldo total: 28284.0
+
+
+CPF: 10895006287
+agência: 18736 conta: 156483 saldo: 4816.0
+Saldo total: 4816.0
+
+
+CPF: 11611988455
+agência: 17640 conta: 117387 saldo: 10692.0
+agência: 19888 conta: 218206 saldo: 15550.0
+Saldo total: 26242.0
+
+
+CPF: 12440511892
+agência: 13537 conta: 142239 saldo: 12114.0
+Saldo total: 12114.0
+
+
+CPF: 12559262361
+agência: 17752 conta: 1009286 saldo: 3337.0
+Saldo total: 3337.0
+
+
+CPF: 12866198501
+INEXISTENTE
+
+CPF: 12873603363
+agência: 14020 conta: 1053186 saldo: 8594.0
+Saldo total: 8594.0
+
+
+CPF: 13018513967
+agência: 14052 conta: 1078242 saldo: -2405.0
+Saldo total: -2405.0
+
+
+CPF: 13034748139
+agência: 15888 conta: 134773 saldo: 5837.0
+agência: 16920 conta: 160983 saldo: 3171.0
+Saldo total: 9008.0
+
+
+CPF: 13111004600
+agência: 13394 conta: 1072974 saldo: 7534.0
+agência: 16103 conta: 1093390 saldo: 1237.0
+Saldo total: 8771.0
+
+
+CPF: 13392372442
+agência: 10872 conta: 132176 saldo: 9395.0
+Saldo total: 9395.0
+
+
+CPF: 13717810025
+agência: 12779 conta: 175929 saldo: -1711.0
+Saldo total: -1711.0
+
+
+CPF: 13914796510
+agência: 10926 conta: 1036248 saldo: 16789.0
+Saldo total: 16789.0
+
+
+CPF: 14075321676
+agência: 13392 conta: 1044201 saldo: 5020.0
+agência: 13678 conta: 269458 saldo: 1602.0
+agência: 14849 conta: 1015161 saldo: 13048.0
+agência: 15175 conta: 181441 saldo: -2833.0
+agência: 18457 conta: 1061818 saldo: 4424.0
+Saldo total: 21261.0
+
+
+CPF: 14416710230
+agência: 17867 conta: 188931 saldo: 6724.0
+Saldo total: 6724.0
+
+
+CPF: 14492151838
+agência: 10721 conta: 1074303 saldo: 4637.0
+Saldo total: 4637.0
+
+
+CPF: 14564931411
+agência: 16997 conta: 1075398 saldo: 8692.0
+Saldo total: 8692.0
+
+
+CPF: 14613516160
+agência: 18643 conta: 1001039 saldo: 3207.0
+Saldo total: 3207.0
+
+
+CPF: 15076627953
+agência: 15905 conta: 154385 saldo: 15598.0
+Saldo total: 15598.0
+
+
+CPF: 15311890854
+agência: 14994 conta: 108952 saldo: 11674.0
+agência: 18717 conta: 1051549 saldo: 4094.0
+Saldo total: 15768.0
+
+
+CPF: 15622588313
+INEXISTENTE
+
+CPF: 15647006648
+agência: 10904 conta: 1056375 saldo: 9605.0
+Saldo total: 9605.0
+
+
+CPF: 16206045475
+agência: 11515 conta: 182927 saldo: -1228.0
+agência: 15708 conta: 1036005 saldo: 1371.0
+agência: 16240 conta: 1020343 saldo: 5410.0
+agência: 18503 conta: 1098173 saldo: 1797.0
+agência: 18771 conta: 1012210 saldo: -527.0
+Saldo total: 6823.0
+
+
+CPF: 16258689332
+agência: 19961 conta: 290552 saldo: 4639.0
+Saldo total: 4639.0
+
+
+CPF: 16297312119
+agência: 10050 conta: 199864 saldo: 6802.0
+agência: 10104 conta: 1001892 saldo: -1450.0
+Saldo total: 5352.0
+
+
+CPF: 16340724354
+agência: 10429 conta: 145599 saldo: 14349.0
+agência: 14798 conta: 1020525 saldo: 4208.0
+agência: 16245 conta: 1034692 saldo: 5490.0
+Saldo total: 24047.0
+
+
+CPF: 16373806670
+agência: 15433 conta: 1014321 saldo: 10095.0
+agência: 16867 conta: 101097 saldo: 16181.0
+Saldo total: 26276.0
+
+
+CPF: 16519614038
+agência: 16857 conta: 210399 saldo: 15278.0
+Saldo total: 15278.0
+
+
+CPF: 16736643883
+agência: 11061 conta: 1017224 saldo: 16104.0
+agência: 18828 conta: 1043423 saldo: 10385.0
+Saldo total: 26489.0
+
+
+CPF: 17147784135
+agência: 13639 conta: 175477 saldo: -143.0
+agência: 14220 conta: 181650 saldo: -454.0
+Saldo total: -597.0
+
+
+CPF: 17172066746
+agência: 17864 conta: 155733 saldo: 1016.0
+Saldo total: 1016.0
+
+
+CPF: 17444678821
+INEXISTENTE
+
+CPF: 18715526757
+agência: 18234 conta: 221477 saldo: 9535.0
+Saldo total: 9535.0
+
+
+CPF: 19106184515
+INEXISTENTE
+
+CPF: 19209611919
+agência: 13403 conta: 1034443 saldo: 6874.0
+agência: 13628 conta: 1036390 saldo: 10972.0
+Saldo total: 17846.0
+
+
+CPF: 19449192577
+agência: 14234 conta: 137703 saldo: 4483.0
+Saldo total: 4483.0
+
+
+CPF: 20522956096
+agência: 10232 conta: 1099752 saldo: 6798.0
+agência: 14125 conta: 1021650 saldo: 5768.0
+agência: 16394 conta: 129523 saldo: 11716.0
+Saldo total: 24282.0
+
+
+CPF: 20562085589
+agência: 13066 conta: 136336 saldo: 10933.0
+Saldo total: 10933.0
+
+
+CPF: 21207970333
+agência: 12545 conta: 1077249 saldo: 9800.0
+Saldo total: 9800.0
+
+
+CPF: 21908224340
+agência: 11945 conta: 1067131 saldo: 2381.0
+Saldo total: 2381.0
+
+
+CPF: 22051526540
+agência: 12115 conta: 141388 saldo: 16605.0
+agência: 13394 conta: 159454 saldo: 12431.0
+Saldo total: 29036.0
+
+
+CPF: 22336590444
+agência: 11591 conta: 172967 saldo: 10923.0
+Saldo total: 10923.0
+
+
+CPF: 22425927464
+agência: 10796 conta: 1045397 saldo: 13474.0
+Saldo total: 13474.0
+
+
+CPF: 22565885448
+agência: 14530 conta: 137853 saldo: -906.0
+agência: 16424 conta: 132556 saldo: 13286.0
+Saldo total: 12380.0
+
+
+CPF: 22667400418
+agência: 11888 conta: 1062595 saldo: 13658.0
+agência: 12622 conta: 1052818 saldo: -2707.0
+agência: 13075 conta: 263480 saldo: 15360.0
+Saldo total: 26311.0
+
+
+CPF: 22742323816
+agência: 14935 conta: 1004137 saldo: 8626.0
+agência: 16300 conta: 170524 saldo: 5730.0
+Saldo total: 14356.0
+
+
+CPF: 23225160617
+agência: 10688 conta: 109852 saldo: 4642.0
+agência: 11631 conta: 112558 saldo: 15638.0
+agência: 13351 conta: 194723 saldo: 10217.0
+agência: 13458 conta: 163230 saldo: 6153.0
+agência: 13966 conta: 1060161 saldo: 10776.0
+agência: 14270 conta: 1063260 saldo: 11192.0
+Saldo total: 58618.0
+
+
+CPF: 23328461117
+INEXISTENTE
+
+CPF: 23564265682
+agência: 12026 conta: 1023936 saldo: -2389.0
+agência: 18815 conta: 1048547 saldo: -507.0
+Saldo total: -2896.0
+
+
+CPF: 23819040059
+agência: 14214 conta: 1027809 saldo: -1962.0
+agência: 18017 conta: 143055 saldo: -396.0
+Saldo total: -2358.0
+
+
+CPF: 23978209856
+agência: 18382 conta: 131134 saldo: 13669.0
+Saldo total: 13669.0
+
+
+CPF: 24007499294
+agência: 19311 conta: 273180 saldo: 3079.0
+Saldo total: 3079.0
+
+
+CPF: 24326660493
+agência: 18478 conta: 1046951 saldo: -1569.0
+Saldo total: -1569.0
+
+
+CPF: 25148795523
+agência: 18231 conta: 1016783 saldo: 2528.0
+agência: 19891 conta: 257396 saldo: -459.0
+Saldo total: 2069.0
+
+
+CPF: 25319112998
+agência: 10567 conta: 1052249 saldo: 12822.0
+agência: 15182 conta: 104703 saldo: 1595.0
+agência: 18415 conta: 135490 saldo: 16890.0
+Saldo total: 31307.0
+
+
+CPF: 25516645008
+INEXISTENTE
+
+CPF: 25623428664
+agência: 16523 conta: 1090492 saldo: 6194.0
+agência: 18503 conta: 147939 saldo: 15319.0
+agência: 19121 conta: 179872 saldo: 11743.0
+Saldo total: 33256.0
+
+
+CPF: 25693736963
+agência: 10106 conta: 267572 saldo: 284.0
+agência: 10760 conta: 181378 saldo: 8531.0
+agência: 13940 conta: 105011 saldo: 3078.0
+Saldo total: 11893.0
+
+
+CPF: 25783320213
+agência: 15333 conta: 136231 saldo: 4700.0
+Saldo total: 4700.0
+
+
+CPF: 25817633518
+agência: 11251 conta: 195585 saldo: 16454.0
+Saldo total: 16454.0
+
+
+CPF: 26249786747
+agência: 11895 conta: 294217 saldo: 4127.0
+Saldo total: 4127.0
+
+
+CPF: 26562911133
+agência: 11912 conta: 1031596 saldo: 10665.0
+agência: 18081 conta: 1054679 saldo: 1454.0
+Saldo total: 12119.0
+
+
+CPF: 26908107669
+agência: 17542 conta: 191565 saldo: 7559.0
+agência: 18766 conta: 103233 saldo: -2388.0
+Saldo total: 5171.0
+
+
+CPF: 27171661989
+agência: 12876 conta: 1030020 saldo: 835.0
+Saldo total: 835.0
+
+
+CPF: 27312609234
+agência: 13918 conta: 129531 saldo: 15532.0
+agência: 14682 conta: 1061635 saldo: 6665.0
+agência: 15379 conta: 107634 saldo: 2395.0
+Saldo total: 24592.0
+
+
+CPF: 27457471036
+agência: 16101 conta: 155354 saldo: 5062.0
+agência: 16426 conta: 1007767 saldo: 13235.0
+Saldo total: 18297.0
+
+
+CPF: 27487335940
+agência: 10842 conta: 1042123 saldo: 15820.0
+Saldo total: 15820.0
+
+
+CPF: 27634868550
+agência: 16431 conta: 1062146 saldo: 12188.0
+Saldo total: 12188.0
+
+
+CPF: 27680254556
+agência: 15586 conta: 1035846 saldo: 10031.0
+Saldo total: 10031.0
+
+
+CPF: 27714422600
+INEXISTENTE
+
+CPF: 27979591680
+INEXISTENTE
+
+CPF: 28198719046
+INEXISTENTE
+
+CPF: 28209456586
+agência: 16441 conta: 1029535 saldo: 9981.0
+Saldo total: 9981.0
+
+
+CPF: 28280273850
+agência: 16884 conta: 199153 saldo: 2313.0
+Saldo total: 2313.0
+
+
+CPF: 28289509095
+INEXISTENTE
+
+CPF: 28309002000
+agência: 15216 conta: 1065793 saldo: 13842.0
+Saldo total: 13842.0
+
+
+CPF: 28516081403
+agência: 16673 conta: 1097977 saldo: 8298.0
+Saldo total: 8298.0
+
+
+CPF: 28981652051
+agência: 12069 conta: 1024632 saldo: 1710.0
+agência: 19635 conta: 1016314 saldo: 8600.0
+Saldo total: 10310.0
+
+
+CPF: 28986909256
+agência: 16611 conta: 188823 saldo: 14897.0
+Saldo total: 14897.0
+
+
+CPF: 29133967905
+agência: 18586 conta: 1070720 saldo: -1355.0
+Saldo total: -1355.0
+
+
+CPF: 29407221139
+agência: 13497 conta: 1031284 saldo: 6862.0
+agência: 17160 conta: 1012147 saldo: 12926.0
+Saldo total: 19788.0
+
+
+CPF: 29676639849
+agência: 13261 conta: 124233 saldo: 2776.0
+Saldo total: 2776.0
+
+
+CPF: 30317989063
+agência: 16413 conta: 125042 saldo: 16309.0
+Saldo total: 16309.0
+
+
+CPF: 31115216950
+agência: 13429 conta: 204959 saldo: 6685.0
+Saldo total: 6685.0
+
+
+CPF: 31210472268
+agência: 11781 conta: 148002 saldo: 15229.0
+agência: 13873 conta: 1075353 saldo: 2738.0
+agência: 15275 conta: 195842 saldo: 13169.0
+agência: 19826 conta: 225304 saldo: 10867.0
+Saldo total: 42003.0
+
+
+CPF: 31545931686
+INEXISTENTE
+
+CPF: 31576852349
+agência: 15612 conta: 1086172 saldo: 12710.0
+Saldo total: 12710.0
+
+
+CPF: 31596590212
+agência: 12249 conta: 1088292 saldo: 10424.0
+agência: 17374 conta: 1069425 saldo: 5916.0
+agência: 19281 conta: 1037041 saldo: 10908.0
+Saldo total: 27248.0
+
+
+CPF: 31865823359
+agência: 11759 conta: 180613 saldo: 3579.0
+Saldo total: 3579.0
+
+
+CPF: 32288426718
+agência: 17869 conta: 1043519 saldo: 16226.0
+Saldo total: 16226.0
+
+
+CPF: 33159560401
+agência: 10310 conta: 124736 saldo: 16439.0
+agência: 11240 conta: 119570 saldo: 15037.0
+agência: 13819 conta: 168065 saldo: 13215.0
+agência: 14792 conta: 1089675 saldo: -210.0
+agência: 19254 conta: 1079045 saldo: 186.0
+Saldo total: 44667.0
+
+
+CPF: 33328262089
+agência: 18409 conta: 209890 saldo: 12003.0
+Saldo total: 12003.0
+
+
+CPF: 34007114327
+agência: 12311 conta: 103103 saldo: 16727.0
+Saldo total: 16727.0
+
+
+CPF: 34412910882
+agência: 13276 conta: 144550 saldo: 14870.0
+agência: 14490 conta: 199653 saldo: 8705.0
+agência: 16425 conta: 181913 saldo: -602.0
+agência: 17314 conta: 183245 saldo: 1661.0
+Saldo total: 24634.0
+
+
+CPF: 34614693503
+agência: 18683 conta: 1084100 saldo: 4482.0
+Saldo total: 4482.0
+
+
+CPF: 35138031830
+agência: 12739 conta: 161136 saldo: 4840.0
+Saldo total: 4840.0
+
+
+CPF: 35499995440
+agência: 15060 conta: 200339 saldo: 14390.0
+Saldo total: 14390.0
+
+
+CPF: 35895052487
+INEXISTENTE
+
+CPF: 36048804954
+INEXISTENTE
+
+CPF: 36113906358
+agência: 18837 conta: 1010442 saldo: 3407.0
+Saldo total: 3407.0
+
+
+CPF: 36120807937
+agência: 12748 conta: 159955 saldo: 3872.0
+agência: 19933 conta: 132259 saldo: 4795.0
+Saldo total: 8667.0
+
+
+CPF: 36199908968
+INEXISTENTE
+
+CPF: 36275118597
+agência: 10259 conta: 1014538 saldo: 15111.0
+agência: 12572 conta: 247141 saldo: 10026.0
+agência: 12721 conta: 1079471 saldo: -72.0
+agência: 12997 conta: 292749 saldo: 7957.0
+agência: 14647 conta: 160922 saldo: 16429.0
+agência: 15231 conta: 160518 saldo: 14893.0
+agência: 16157 conta: 135447 saldo: -2591.0
+agência: 16914 conta: 185642 saldo: 8905.0
+agência: 18763 conta: 179506 saldo: 4063.0
+Saldo total: 74721.0
+
+
+CPF: 37880249818
+agência: 10588 conta: 118705 saldo: 6644.0
+agência: 14138 conta: 1089950 saldo: 12903.0
+Saldo total: 19547.0
+
+
+CPF: 38054759001
+agência: 10985 conta: 119864 saldo: 2502.0
+agência: 11638 conta: 149063 saldo: -641.0
+agência: 13671 conta: 1091682 saldo: 5135.0
+Saldo total: 6996.0
+
+
+CPF: 38245377093
+agência: 11697 conta: 192921 saldo: 10521.0
+Saldo total: 10521.0
+
+
+CPF: 38292764965
+agência: 14749 conta: 1052114 saldo: 4882.0
+Saldo total: 4882.0
+
+
+CPF: 39017522587
+agência: 14653 conta: 199871 saldo: 805.0
+agência: 19195 conta: 185793 saldo: 5577.0
+Saldo total: 6382.0
+
+
+CPF: 39250871221
+INEXISTENTE
+
+CPF: 39256450263
+agência: 18066 conta: 151605 saldo: 14677.0
+Saldo total: 14677.0
+
+
+CPF: 39313146737
+agência: 11810 conta: 1066424 saldo: -1886.0
+Saldo total: -1886.0
+
+
+CPF: 39388648167
+agência: 13848 conta: 113004 saldo: 3981.0
+agência: 14519 conta: 110888 saldo: 10776.0
+Saldo total: 14757.0
+
+
+CPF: 39597906039
+INEXISTENTE
+
+CPF: 39652372913
+agência: 14983 conta: 128693 saldo: 4998.0
+agência: 19105 conta: 1097196 saldo: 1499.0
+Saldo total: 6497.0
+
+
+CPF: 39662292099
+agência: 11465 conta: 1031807 saldo: 1489.0
+Saldo total: 1489.0
+
+
+CPF: 39888408195
+agência: 10366 conta: 116745 saldo: 16452.0
+agência: 13859 conta: 1071924 saldo: -418.0
+agência: 17941 conta: 192151 saldo: 16070.0
+Saldo total: 32104.0
+
+
+CPF: 40283728258
+agência: 12114 conta: 112408 saldo: 5021.0
+Saldo total: 5021.0
+
+
+CPF: 40287959267
+INEXISTENTE
+
+CPF: 40601139736
+agência: 14969 conta: 1015507 saldo: 799.0
+Saldo total: 799.0
+
+
+CPF: 40713549768
+agência: 14895 conta: 128868 saldo: 4508.0
+agência: 17388 conta: 1046995 saldo: 14280.0
+Saldo total: 18788.0
+
+
+CPF: 41237798879
+INEXISTENTE
+
+CPF: 41250134480
+agência: 14356 conta: 1011536 saldo: 15288.0
+agência: 19011 conta: 1075993 saldo: 2860.0
+Saldo total: 18148.0
+
+
+CPF: 41257243764
+INEXISTENTE
+
+CPF: 41554880246
+agência: 11854 conta: 163818 saldo: -1793.0
+agência: 16984 conta: 192232 saldo: 6384.0
+Saldo total: 4591.0
+
+
+CPF: 41747497062
+agência: 12210 conta: 168439 saldo: 8446.0
+agência: 17957 conta: 1039868 saldo: 2196.0
+Saldo total: 10642.0
+
+
+CPF: 41815505713
+INEXISTENTE
+
+CPF: 41841883615
+INEXISTENTE
+
+CPF: 42850218832
+agência: 15015 conta: 1044895 saldo: 3947.0
+Saldo total: 3947.0
+
+
+CPF: 43166542997
+agência: 12929 conta: 1058350 saldo: -1447.0
+Saldo total: -1447.0
+
+
+CPF: 43437853045
+agência: 11816 conta: 1002249 saldo: 11687.0
+Saldo total: 11687.0
+
+
+CPF: 43643890480
+INEXISTENTE
+
+CPF: 44252495085
+agência: 12009 conta: 190813 saldo: -675.0
+Saldo total: -675.0
+
+
+CPF: 44393250071
+agência: 10103 conta: 104152 saldo: 11815.0
+agência: 11724 conta: 114982 saldo: 2920.0
+agência: 17401 conta: 134347 saldo: 1589.0
+Saldo total: 16324.0
+
+
+CPF: 44401038393
+INEXISTENTE
+
+CPF: 44694404326
+agência: 12699 conta: 106623 saldo: 5471.0
+Saldo total: 5471.0
+
+
+CPF: 44876755655
+agência: 16906 conta: 1086395 saldo: 11006.0
+Saldo total: 11006.0
+
+
+CPF: 45151888669
+agência: 10479 conta: 129514 saldo: 10501.0
+Saldo total: 10501.0
+
+
+CPF: 45295739919
+agência: 14153 conta: 211528 saldo: 8079.0
+Saldo total: 8079.0
+
+
+CPF: 45511773699
+agência: 13425 conta: 103531 saldo: 9781.0
+Saldo total: 9781.0
+
+
+CPF: 45699940895
+agência: 12658 conta: 134825 saldo: -425.0
+Saldo total: -425.0
+
+
+CPF: 45804030899
+agência: 15937 conta: 185347 saldo: 1023.0
+Saldo total: 1023.0
+
+
+CPF: 46318955485
+agência: 12648 conta: 1083403 saldo: 11926.0
+Saldo total: 11926.0
+
+
+CPF: 46365630616
+agência: 10671 conta: 1026584 saldo: 16786.0
+agência: 12901 conta: 125350 saldo: 3129.0
+agência: 14207 conta: 159817 saldo: 13973.0
+agência: 14819 conta: 115218 saldo: 7004.0
+agência: 19999 conta: 1072743 saldo: 3723.0
+Saldo total: 44615.0
+
+
+CPF: 46444224287
+agência: 16038 conta: 135999 saldo: 4905.0
+Saldo total: 4905.0
+
+
+CPF: 46598134311
+agência: 12393 conta: 173666 saldo: 11184.0
+Saldo total: 11184.0
+
+
+CPF: 46975326370
+INEXISTENTE
+
+CPF: 47556987967
+agência: 13393 conta: 197242 saldo: 16278.0
+Saldo total: 16278.0
+
+
+CPF: 47831430959
+agência: 18028 conta: 1070163 saldo: 15171.0
+Saldo total: 15171.0
+
+
+CPF: 47878648601
+agência: 11587 conta: 112083 saldo: 10048.0
+Saldo total: 10048.0
+
+
+CPF: 47912362364
+INEXISTENTE
+
+CPF: 47914445298
+agência: 10375 conta: 1062664 saldo: 2083.0
+agência: 11277 conta: 115707 saldo: 6354.0
+Saldo total: 8437.0
+
+
+CPF: 48085896911
+agência: 17878 conta: 1085143 saldo: 5908.0
+Saldo total: 5908.0
+
+
+CPF: 48373337936
+agência: 16047 conta: 135157 saldo: 15857.0
+Saldo total: 15857.0
+
+
+CPF: 48484716321
+agência: 19105 conta: 1056297 saldo: 13397.0
+Saldo total: 13397.0
+
+
+CPF: 48519794041
+INEXISTENTE
+
+CPF: 48781035931
+agência: 18675 conta: 105614 saldo: 11863.0
+Saldo total: 11863.0
+
+
+CPF: 49132764924
+agência: 17886 conta: 217057 saldo: -1210.0
+Saldo total: -1210.0
+
+
+CPF: 49211653483
+agência: 12746 conta: 1039702 saldo: -1053.0
+Saldo total: -1053.0
+
+
+CPF: 49251427967
+agência: 12590 conta: 1064984 saldo: 15979.0
+Saldo total: 15979.0
+
+
+CPF: 49512653928
+INEXISTENTE
+
+CPF: 49723248395
+agência: 11020 conta: 219660 saldo: 6228.0
+agência: 15569 conta: 158915 saldo: 4694.0
+agência: 18332 conta: 1088569 saldo: -2321.0
+agência: 19176 conta: 199335 saldo: -2395.0
+Saldo total: 6206.0
+
+
+CPF: 49745113165
+INEXISTENTE
+
+CPF: 49824423224
+agência: 19377 conta: 1032873 saldo: 10758.0
+Saldo total: 10758.0
+
+
+CPF: 49958361727
+agência: 12999 conta: 191960 saldo: 10555.0
+Saldo total: 10555.0
+
+
+CPF: 50056320864
+agência: 16711 conta: 1047874 saldo: 13197.0
+Saldo total: 13197.0
+
+
+CPF: 50438062395
+agência: 15065 conta: 220247 saldo: 3344.0
+Saldo total: 3344.0
+
+
+CPF: 50470837935
+agência: 14403 conta: 125374 saldo: 1541.0
+agência: 16688 conta: 140014 saldo: 11314.0
+agência: 17007 conta: 131512 saldo: -11.0
+agência: 18224 conta: 117787 saldo: 213.0
+Saldo total: 13057.0
+
+
+CPF: 50543673030
+INEXISTENTE
+
+CPF: 51375976065
+agência: 12151 conta: 253955 saldo: 2476.0
+agência: 14223 conta: 108295 saldo: 5569.0
+Saldo total: 8045.0
+
+
+CPF: 51434565483
+agência: 10188 conta: 1060007 saldo: 6080.0
+agência: 13861 conta: 117671 saldo: 11070.0
+agência: 14944 conta: 250526 saldo: -1723.0
+agência: 15025 conta: 1025374 saldo: -1401.0
+Saldo total: 14026.0
+
+
+CPF: 51551944807
+agência: 11094 conta: 1076603 saldo: 15054.0
+agência: 17472 conta: 1045407 saldo: 7518.0
+Saldo total: 22572.0
+
+
+CPF: 51995352044
+agência: 12344 conta: 1079070 saldo: 2237.0
+Saldo total: 2237.0
+
+
+CPF: 52755582564
+agência: 13805 conta: 1028954 saldo: 222.0
+Saldo total: 222.0
+
+
+CPF: 52996484154
+agência: 18848 conta: 1062383 saldo: 14513.0
+Saldo total: 14513.0
+
+
+CPF: 53942944922
+agência: 16657 conta: 1045608 saldo: -2369.0
+Saldo total: -2369.0
+
+
+CPF: 53978265983
+agência: 14105 conta: 144923 saldo: 3083.0
+agência: 14396 conta: 1087891 saldo: 9374.0
+agência: 19135 conta: 1066944 saldo: 5980.0
+Saldo total: 18437.0
+
+
+CPF: 54439734266
+agência: 16906 conta: 161183 saldo: 8864.0
+Saldo total: 8864.0
+
+
+CPF: 55025688712
+agência: 10828 conta: 112625 saldo: 12391.0
+agência: 13869 conta: 252217 saldo: 14518.0
+agência: 14588 conta: 167097 saldo: 13122.0
+agência: 14764 conta: 1016252 saldo: -2833.0
+agência: 14907 conta: 1023093 saldo: 14031.0
+agência: 15516 conta: 1089269 saldo: 1609.0
+Saldo total: 52838.0
+
+
+CPF: 55149348511
+agência: 11596 conta: 1081917 saldo: 7739.0
+agência: 15385 conta: 1070990 saldo: 7205.0
+agência: 18246 conta: 122325 saldo: 11051.0
+Saldo total: 25995.0
+
+
+CPF: 55188583941
+agência: 11247 conta: 265804 saldo: 5801.0
+agência: 13036 conta: 128451 saldo: 559.0
+Saldo total: 6360.0
+
+
+CPF: 56225431577
+agência: 19556 conta: 1093620 saldo: 14982.0
+Saldo total: 14982.0
+
+
+CPF: 56282945280
+agência: 14682 conta: 164186 saldo: 2946.0
+agência: 17489 conta: 1020430 saldo: 7331.0
+Saldo total: 10277.0
+
+
+CPF: 56361324226
+agência: 11231 conta: 116133 saldo: 8775.0
+Saldo total: 8775.0
+
+
+CPF: 56374965067
+agência: 18437 conta: 151649 saldo: 6249.0
+Saldo total: 6249.0
+
+
+CPF: 56631322562
+agência: 12379 conta: 1011318 saldo: 4395.0
+Saldo total: 4395.0
+
+
+CPF: 57138911500
+agência: 10936 conta: 292006 saldo: 13743.0
+agência: 15366 conta: 119788 saldo: 5276.0
+agência: 17293 conta: 181927 saldo: 7332.0
+Saldo total: 26351.0
+
+
+CPF: 57723965422
+agência: 13568 conta: 165115 saldo: 15709.0
+Saldo total: 15709.0
+
+
+CPF: 58261905074
+agência: 11086 conta: 112006 saldo: 12873.0
+Saldo total: 12873.0
+
+
+CPF: 58287241417
+agência: 19706 conta: 284691 saldo: 11330.0
+Saldo total: 11330.0
+
+
+CPF: 58367339618
+agência: 13634 conta: 172063 saldo: 13748.0
+agência: 16626 conta: 168603 saldo: 4448.0
+agência: 17950 conta: 223580 saldo: 9925.0
+Saldo total: 28121.0
+
+
+CPF: 59085202737
+INEXISTENTE
+
+CPF: 59331637209
+agência: 15585 conta: 111078 saldo: 15448.0
+agência: 16885 conta: 258829 saldo: 8125.0
+agência: 18105 conta: 1090001 saldo: 7307.0
+Saldo total: 30880.0
+
+
+CPF: 59891678049
+INEXISTENTE
+
+CPF: 60054871757
+agência: 15277 conta: 1088092 saldo: 6680.0
+agência: 15727 conta: 181166 saldo: 10167.0
+Saldo total: 16847.0
+
+
+CPF: 60389596803
+agência: 14022 conta: 122475 saldo: 2483.0
+agência: 17726 conta: 1004042 saldo: 1757.0
+Saldo total: 4240.0
+
+
+CPF: 60491277759
+agência: 19150 conta: 152158 saldo: 9257.0
+Saldo total: 9257.0
+
+
+CPF: 60539059762
+agência: 18128 conta: 1005939 saldo: 1273.0
+Saldo total: 1273.0
+
+
+CPF: 60662885319
+agência: 14269 conta: 239328 saldo: 14793.0
+Saldo total: 14793.0
+
+
+CPF: 60809564805
+INEXISTENTE
+
+CPF: 61282797437
+INEXISTENTE
+
+CPF: 61434045521
+agência: 18134 conta: 1078976 saldo: -2674.0
+Saldo total: -2674.0
+
+
+CPF: 61468781010
+INEXISTENTE
+
+CPF: 61520678968
+agência: 19559 conta: 111863 saldo: 12489.0
+Saldo total: 12489.0
+
+
+CPF: 62046642277
+agência: 15284 conta: 101125 saldo: 15084.0
+Saldo total: 15084.0
+
+
+CPF: 62165912272
+agência: 12611 conta: 100823 saldo: 4584.0
+agência: 16343 conta: 1021976 saldo: 3919.0
+Saldo total: 8503.0
+
+
+CPF: 62356431317
+agência: 18847 conta: 188286 saldo: 16841.0
+agência: 19975 conta: 1029104 saldo: 2243.0
+Saldo total: 19084.0
+
+
+CPF: 62525569102
+agência: 14809 conta: 1017184 saldo: 8026.0
+agência: 19203 conta: 249155 saldo: 11344.0
+Saldo total: 19370.0
+
+
+CPF: 63136291405
+agência: 11801 conta: 1027240 saldo: 6031.0
+agência: 12148 conta: 1011009 saldo: 9936.0
+Saldo total: 15967.0
+
+
+CPF: 63408057004
+agência: 10995 conta: 154895 saldo: 8758.0
+Saldo total: 8758.0
+
+
+CPF: 63513560109
+agência: 14434 conta: 108372 saldo: -33.0
+Saldo total: -33.0
+
+
+CPF: 64297761101
+agência: 17400 conta: 160369 saldo: 10017.0
+Saldo total: 10017.0
+
+
+CPF: 64710373783
+agência: 19689 conta: 132366 saldo: 15381.0
+Saldo total: 15381.0
+
+
+CPF: 64723080083
+agência: 10269 conta: 205725 saldo: 13589.0
+agência: 17266 conta: 185115 saldo: -485.0
+agência: 18727 conta: 121968 saldo: -2368.0
+Saldo total: 10736.0
+
+
+CPF: 64837319627
+agência: 10757 conta: 1002936 saldo: 14772.0
+Saldo total: 14772.0
+
+
+CPF: 65179376428
+agência: 18168 conta: 111640 saldo: 13289.0
+Saldo total: 13289.0
+
+
+CPF: 65274190121
+agência: 10440 conta: 118018 saldo: 6512.0
+agência: 13879 conta: 1086177 saldo: 8495.0
+agência: 17093 conta: 1058438 saldo: 8190.0
+Saldo total: 23197.0
+
+
+CPF: 66146537246
+INEXISTENTE
+
+CPF: 66162787654
+agência: 13126 conta: 258225 saldo: 4362.0
+Saldo total: 4362.0
+
+
+CPF: 66428342679
+agência: 15072 conta: 1017804 saldo: 2918.0
+agência: 17248 conta: 1025235 saldo: 1993.0
+agência: 17255 conta: 1098310 saldo: -2279.0
+Saldo total: 2632.0
+
+
+CPF: 66811522304
+agência: 18433 conta: 128172 saldo: -2876.0
+Saldo total: -2876.0
+
+
+CPF: 67175788971
+agência: 15625 conta: 1068477 saldo: 12122.0
+Saldo total: 12122.0
+
+
+CPF: 67183136609
+agência: 12507 conta: 1024499 saldo: 8127.0
+Saldo total: 8127.0
+
+
+CPF: 67553743185
+agência: 11017 conta: 153526 saldo: 11212.0
+agência: 17323 conta: 1022088 saldo: 7211.0
+Saldo total: 18423.0
+
+
+CPF: 67639379082
+agência: 11029 conta: 145406 saldo: 10537.0
+agência: 14977 conta: 136319 saldo: 16938.0
+agência: 19443 conta: 1062383 saldo: 15084.0
+Saldo total: 42559.0
+
+
+CPF: 68214072259
+agência: 13814 conta: 1099389 saldo: 1109.0
+agência: 14992 conta: 1030210 saldo: 13529.0
+agência: 16414 conta: 1046969 saldo: 13990.0
+Saldo total: 28628.0
+
+
+CPF: 68622499371
+agência: 11525 conta: 1063297 saldo: -1510.0
+agência: 17882 conta: 1082958 saldo: 11760.0
+agência: 18946 conta: 158785 saldo: 9379.0
+Saldo total: 19629.0
+
+
+CPF: 68762948603
+agência: 19627 conta: 172442 saldo: 4764.0
+Saldo total: 4764.0
+
+
+CPF: 69049977377
+agência: 12730 conta: 1028458 saldo: 3581.0
+Saldo total: 3581.0
+
+
+CPF: 69124546903
+agência: 18439 conta: 1003909 saldo: -129.0
+Saldo total: -129.0
+
+
+CPF: 69387434624
+agência: 10423 conta: 1029325 saldo: -2836.0
+agência: 12242 conta: 141430 saldo: 14804.0
+Saldo total: 11968.0
+
+
+CPF: 69860386265
+agência: 12625 conta: 1073639 saldo: 8385.0
+Saldo total: 8385.0
+
+
+CPF: 69931954342
+agência: 10476 conta: 107967 saldo: 8089.0
+Saldo total: 8089.0
+
+
+CPF: 70048401585
+agência: 11584 conta: 1045865 saldo: 13122.0
+agência: 13345 conta: 101183 saldo: 2669.0
+Saldo total: 15791.0
+
+
+CPF: 70196635920
+agência: 11215 conta: 1049178 saldo: 2041.0
+Saldo total: 2041.0
+
+
+CPF: 70727949987
+agência: 18354 conta: 184098 saldo: -1116.0
+Saldo total: -1116.0
+
+
+CPF: 70918039508
+agência: 13362 conta: 174090 saldo: 3818.0
+Saldo total: 3818.0
+
+
+CPF: 71229568954
+agência: 12962 conta: 163367 saldo: 15389.0
+Saldo total: 15389.0
+
+
+CPF: 72055938649
+INEXISTENTE
+
+CPF: 72188104751
+agência: 12170 conta: 172462 saldo: 1566.0
+agência: 19046 conta: 255384 saldo: 14760.0
+Saldo total: 16326.0
+
+
+CPF: 72508159738
+agência: 16704 conta: 134344 saldo: -1949.0
+Saldo total: -1949.0
+
+
+CPF: 72592091208
+agência: 11891 conta: 136996 saldo: 5856.0
+agência: 12571 conta: 1034777 saldo: 5328.0
+agência: 19820 conta: 140800 saldo: 14592.0
+Saldo total: 25776.0
+
+
+CPF: 72723211505
+agência: 14183 conta: 154291 saldo: 13300.0
+agência: 16539 conta: 114718 saldo: 9147.0
+Saldo total: 22447.0
+
+
+CPF: 72848329592
+agência: 17533 conta: 252059 saldo: 6621.0
+Saldo total: 6621.0
+
+
+CPF: 73474379523
+agência: 17834 conta: 158124 saldo: 2848.0
+Saldo total: 2848.0
+
+
+CPF: 73610019226
+agência: 10141 conta: 1062126 saldo: 10527.0
+Saldo total: 10527.0
+
+
+CPF: 73630124164
+agência: 14914 conta: 179802 saldo: 8671.0
+agência: 16023 conta: 289918 saldo: 5948.0
+Saldo total: 14619.0
+
+
+CPF: 73743629702
+agência: 12920 conta: 1028175 saldo: 10739.0
+Saldo total: 10739.0
+
+
+CPF: 73898301479
+agência: 11115 conta: 1050225 saldo: 16743.0
+agência: 16127 conta: 1000779 saldo: -640.0
+agência: 18184 conta: 192553 saldo: 10896.0
+Saldo total: 26999.0
+
+
+CPF: 74050546596
+agência: 14368 conta: 241703 saldo: -1963.0
+Saldo total: -1963.0
+
+
+CPF: 74202834548
+agência: 17855 conta: 1057035 saldo: 11977.0
+Saldo total: 11977.0
+
+
+CPF: 74752128225
+agência: 13831 conta: 126693 saldo: 176.0
+Saldo total: 176.0
+
+
+CPF: 74761865437
+agência: 12099 conta: 1058458 saldo: 362.0
+Saldo total: 362.0
+
+
+CPF: 75649957335
+agência: 18860 conta: 155989 saldo: 12920.0
+Saldo total: 12920.0
+
+
+CPF: 75698429661
+agência: 15186 conta: 1081882 saldo: 16653.0
+agência: 16258 conta: 190682 saldo: 13348.0
+Saldo total: 30001.0
+
+
+CPF: 75822135110
+agência: 16528 conta: 1088016 saldo: 682.0
+Saldo total: 682.0
+
+
+CPF: 76018878107
+agência: 18024 conta: 150815 saldo: -211.0
+agência: 18530 conta: 1070026 saldo: 1116.0
+Saldo total: 905.0
+
+
+CPF: 76190646618
+agência: 11788 conta: 1098495 saldo: 13792.0
+Saldo total: 13792.0
+
+
+CPF: 76744405825
+agência: 15554 conta: 1094143 saldo: 16521.0
+Saldo total: 16521.0
+
+
+CPF: 76800243813
+agência: 12293 conta: 1032862 saldo: 16186.0
+agência: 15892 conta: 177269 saldo: 12871.0
+agência: 16592 conta: 1083639 saldo: 16145.0
+Saldo total: 45202.0
+
+
+CPF: 77011988305
+agência: 19197 conta: 1079997 saldo: 13501.0
+Saldo total: 13501.0
+
+
+CPF: 77030595816
+agência: 14804 conta: 1053578 saldo: 13443.0
+Saldo total: 13443.0
+
+
+CPF: 77263508632
+agência: 10787 conta: 276247 saldo: 8717.0
+agência: 12264 conta: 1012997 saldo: 6686.0
+Saldo total: 15403.0
+
+
+CPF: 77822217787
+agência: 19243 conta: 114722 saldo: 157.0
+Saldo total: 157.0
+
+
+CPF: 77868952056
+INEXISTENTE
+
+CPF: 78238722258
+agência: 19717 conta: 1006953 saldo: 7018.0
+Saldo total: 7018.0
+
+
+CPF: 79754171167
+agência: 14398 conta: 1040555 saldo: 16389.0
+Saldo total: 16389.0
+
+
+CPF: 79912355582
+agência: 18040 conta: 282759 saldo: -1574.0
+Saldo total: -1574.0
+
+
+CPF: 80080335570
+INEXISTENTE
+
+CPF: 80510383741
+agência: 12019 conta: 238585 saldo: 14094.0
+Saldo total: 14094.0
+
+
+CPF: 80739952837
+INEXISTENTE
+
+CPF: 80912786949
+INEXISTENTE
+
+CPF: 80914716224
+agência: 12598 conta: 122432 saldo: 7707.0
+agência: 18860 conta: 256077 saldo: 7292.0
+Saldo total: 14999.0
+
+
+CPF: 81287680987
+agência: 12807 conta: 1095273 saldo: 155.0
+Saldo total: 155.0
+
+
+CPF: 81685110359
+agência: 12939 conta: 140642 saldo: 6749.0
+agência: 18808 conta: 1082882 saldo: 4976.0
+Saldo total: 11725.0
+
+
+CPF: 81763351646
+agência: 12429 conta: 1065602 saldo: 6469.0
+agência: 15856 conta: 1006414 saldo: 1619.0
+Saldo total: 8088.0
+
+
+CPF: 81830464468
+agência: 13703 conta: 1010045 saldo: 10715.0
+Saldo total: 10715.0
+
+
+CPF: 81903106523
+agência: 19476 conta: 170121 saldo: 11113.0
+Saldo total: 11113.0
+
+
+CPF: 81916449776
+agência: 17207 conta: 1069658 saldo: 5175.0
+agência: 17279 conta: 217893 saldo: 1018.0
+Saldo total: 6193.0
+
+
+CPF: 82083932136
+agência: 15792 conta: 127439 saldo: 1106.0
+Saldo total: 1106.0
+
+
+CPF: 82130706378
+agência: 18602 conta: 1034309 saldo: 330.0
+Saldo total: 330.0
+
+
+CPF: 82204967465
+agência: 12846 conta: 1056331 saldo: 3328.0
+agência: 17877 conta: 182639 saldo: 9403.0
+Saldo total: 12731.0
+
+
+CPF: 82423692805
+agência: 10142 conta: 1044733 saldo: 9106.0
+agência: 16859 conta: 144502 saldo: 10455.0
+agência: 17377 conta: 176187 saldo: 8645.0
+Saldo total: 28206.0
+
+
+CPF: 82437954279
+agência: 14524 conta: 168937 saldo: 16614.0
+Saldo total: 16614.0
+
+
+CPF: 82645809976
+agência: 11273 conta: 142162 saldo: 14030.0
+Saldo total: 14030.0
+
+
+CPF: 82780656138
+agência: 15271 conta: 1091142 saldo: 7908.0
+agência: 17198 conta: 1047717 saldo: 168.0
+Saldo total: 8076.0
+
+
+CPF: 82982703969
+agência: 10642 conta: 268028 saldo: 14604.0
+Saldo total: 14604.0
+
+
+CPF: 83144654870
+agência: 14747 conta: 1058314 saldo: 8225.0
+Saldo total: 8225.0
+
+
+CPF: 83366056832
+agência: 10311 conta: 1025774 saldo: 11088.0
+Saldo total: 11088.0
+
+
+CPF: 83470971015
+agência: 12673 conta: 1099645 saldo: 8581.0
+Saldo total: 8581.0
+
+
+CPF: 83564481630
+agência: 11232 conta: 1050082 saldo: 8229.0
+agência: 18080 conta: 1040203 saldo: 14887.0
+Saldo total: 23116.0
+
+
+CPF: 83615861853
+agência: 11201 conta: 214602 saldo: 1456.0
+Saldo total: 1456.0
+
+
+CPF: 83776537020
+agência: 17368 conta: 1009201 saldo: 4400.0
+Saldo total: 4400.0
+
+
+CPF: 83870382792
+agência: 16230 conta: 1014847 saldo: -2469.0
+Saldo total: -2469.0
+
+
+CPF: 83943967864
+agência: 13970 conta: 1006325 saldo: 16328.0
+agência: 18105 conta: 169881 saldo: 14395.0
+Saldo total: 30723.0
+
+
+CPF: 83980769291
+agência: 13750 conta: 1077461 saldo: 11738.0
+agência: 15887 conta: 1072735 saldo: 8099.0
+Saldo total: 19837.0
+
+
+CPF: 84290454289
+agência: 12714 conta: 148439 saldo: 15768.0
+agência: 17693 conta: 1009438 saldo: 5274.0
+Saldo total: 21042.0
+
+
+CPF: 84491695445
+agência: 16123 conta: 1081951 saldo: 1502.0
+Saldo total: 1502.0
+
+
+CPF: 84703484451
+INEXISTENTE
+
+CPF: 84861066292
+agência: 17467 conta: 1058317 saldo: 8702.0
+Saldo total: 8702.0
+
+
+CPF: 85615770904
+INEXISTENTE
+
+CPF: 86157576555
+agência: 15379 conta: 1007396 saldo: 14683.0
+Saldo total: 14683.0
+
+
+CPF: 86509017244
+agência: 16020 conta: 125417 saldo: 12869.0
+Saldo total: 12869.0
+
+
+CPF: 86584135790
+agência: 19856 conta: 161060 saldo: 12358.0
+Saldo total: 12358.0
+
+
+CPF: 87161494058
+agência: 16930 conta: 115794 saldo: 5553.0
+Saldo total: 5553.0
+
+
+CPF: 87358471038
+agência: 18937 conta: 1054727 saldo: -1861.0
+Saldo total: -1861.0
+
+
+CPF: 88304861622
+agência: 16230 conta: 1061848 saldo: 12661.0
+Saldo total: 12661.0
+
+
+CPF: 88416165260
+agência: 13722 conta: 1030203 saldo: 6466.0
+agência: 15610 conta: 160039 saldo: 7965.0
+Saldo total: 14431.0
+
+
+CPF: 89080564444
+agência: 17947 conta: 1074283 saldo: 5063.0
+Saldo total: 5063.0
+
+
+CPF: 89703837130
+agência: 12124 conta: 239218 saldo: 6155.0
+Saldo total: 6155.0
+
+
+CPF: 89786568471
+agência: 11615 conta: 1088551 saldo: 14173.0
+agência: 13526 conta: 1022820 saldo: 11181.0
+Saldo total: 25354.0
+
+
+CPF: 89793297891
+agência: 12464 conta: 166122 saldo: 10883.0
+agência: 19304 conta: 123066 saldo: 11748.0
+Saldo total: 22631.0
+
+
+CPF: 89946136168
+agência: 13100 conta: 174297 saldo: 13102.0
+agência: 16720 conta: 146973 saldo: 4771.0
+agência: 16821 conta: 1082198 saldo: 12442.0
+Saldo total: 30315.0
+
+
+CPF: 90139256147
+agência: 17668 conta: 1042173 saldo: 9723.0
+Saldo total: 9723.0
+
+
+CPF: 90209342264
+agência: 13660 conta: 1027536 saldo: -2176.0
+Saldo total: -2176.0
+
+
+CPF: 90282343259
+agência: 15474 conta: 1049435 saldo: 3913.0
+agência: 16190 conta: 1029522 saldo: 988.0
+Saldo total: 4901.0
+
+
+CPF: 90471564478
+agência: 19437 conta: 154085 saldo: 2301.0
+Saldo total: 2301.0
+
+
+CPF: 90731639731
+agência: 19122 conta: 1006431 saldo: 10469.0
+Saldo total: 10469.0
+
+
+CPF: 90963054936
+agência: 13640 conta: 1040318 saldo: 6532.0
+agência: 19187 conta: 128925 saldo: -1792.0
+Saldo total: 4740.0
+
+
+CPF: 90979893127
+agência: 17858 conta: 1008689 saldo: 13064.0
+Saldo total: 13064.0
+
+
+CPF: 91853067012
+agência: 17191 conta: 172783 saldo: 7166.0
+agência: 17857 conta: 159922 saldo: 7201.0
+Saldo total: 14367.0
+
+
+CPF: 92230689157
+agência: 13729 conta: 164810 saldo: 10405.0
+Saldo total: 10405.0
+
+
+CPF: 92245639637
+agência: 14763 conta: 1059595 saldo: 12668.0
+Saldo total: 12668.0
+
+
+CPF: 92585106425
+agência: 14364 conta: 181701 saldo: 7110.0
+Saldo total: 7110.0
+
+
+CPF: 92630545586
+agência: 14455 conta: 1068011 saldo: 3597.0
+agência: 19555 conta: 1021700 saldo: 14349.0
+agência: 19746 conta: 164412 saldo: 16630.0
+Saldo total: 34576.0
+
+
+CPF: 92645714552
+agência: 16037 conta: 1015575 saldo: 15474.0
+agência: 17428 conta: 133572 saldo: 3031.0
+Saldo total: 18505.0
+
+
+CPF: 92705438317
+agência: 13095 conta: 164184 saldo: 4212.0
+agência: 16373 conta: 184664 saldo: 1473.0
+agência: 17924 conta: 1015492 saldo: -153.0
+Saldo total: 5532.0
+
+
+CPF: 92825144412
+agência: 13413 conta: 200862 saldo: 8068.0
+agência: 16146 conta: 1043629 saldo: 1496.0
+agência: 16834 conta: 1091044 saldo: 14055.0
+agência: 18889 conta: 103751 saldo: 16936.0
+Saldo total: 40555.0
+
+
+CPF: 93320115919
+agência: 19292 conta: 1023604 saldo: 10226.0
+Saldo total: 10226.0
+
+
+CPF: 93429402206
+agência: 19171 conta: 167361 saldo: -2503.0
+Saldo total: -2503.0
+
+
+CPF: 93627068131
+INEXISTENTE
+
+CPF: 93792987782
+agência: 11137 conta: 1006926 saldo: 3833.0
+Saldo total: 3833.0
+
+
+CPF: 94004059733
+agência: 13698 conta: 183361 saldo: 8229.0
+agência: 19536 conta: 184775 saldo: 15418.0
+agência: 19864 conta: 1068480 saldo: -2684.0
+Saldo total: 20963.0
+
+
+CPF: 94018651017
+agência: 10073 conta: 124250 saldo: 587.0
+agência: 19885 conta: 198164 saldo: 10461.0
+Saldo total: 11048.0
+
+
+CPF: 94208831442
+agência: 11563 conta: 1035001 saldo: 4438.0
+Saldo total: 4438.0
+
+
+CPF: 94338784178
+agência: 14016 conta: 1052713 saldo: 1033.0
+Saldo total: 1033.0
+
+
+CPF: 94402825377
+agência: 13426 conta: 1055826 saldo: -1723.0
+Saldo total: -1723.0
+
+
+CPF: 94482869842
+agência: 10353 conta: 299835 saldo: 9053.0
+agência: 19854 conta: 174031 saldo: 9925.0
+Saldo total: 18978.0
+
+
+CPF: 94487890895
+INEXISTENTE
+
+CPF: 94651575276
+agência: 13644 conta: 210354 saldo: 2284.0
+Saldo total: 2284.0
+
+
+CPF: 95784709299
+agência: 17963 conta: 1068619 saldo: 16678.0
+Saldo total: 16678.0
+
+
+CPF: 97322820701
+agência: 11849 conta: 1024479 saldo: 4756.0
+Saldo total: 4756.0
+
+
+CPF: 97754649809
+agência: 10736 conta: 1094192 saldo: -628.0
+agência: 13102 conta: 291709 saldo: 9680.0
+Saldo total: 9052.0
+
+
+CPF: 97757544171
+agência: 13913 conta: 185482 saldo: 2478.0
+Saldo total: 2478.0
+
+
+CPF: 97777467199
+agência: 17888 conta: 130950 saldo: 11331.0
+Saldo total: 11331.0
+
+
+CPF: 98408016575
+agência: 17888 conta: 107049 saldo: -123.0
+agência: 19101 conta: 140161 saldo: 2692.0
+Saldo total: 2569.0
+
+
+CPF: 98687813576
+agência: 17466 conta: 1075898 saldo: 8760.0
+Saldo total: 8760.0
+
+
+CPF: 99130818999
+agência: 17039 conta: 108135 saldo: 13856.0
+Saldo total: 13856.0
+
+
+CPF: 99536445151
+agência: 16668 conta: 1009569 saldo: 16626.0
+Saldo total: 16626.0
+
+
+CPF: 99861754144
+agência: 13932 conta: 262317 saldo: -1715.0
+Saldo total: -1715.0
+
+
