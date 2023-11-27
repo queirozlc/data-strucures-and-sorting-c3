@@ -12,13 +12,12 @@ public class BankAccountHandler implements DataStructureHandler<BankAccount> {
 
     @Override
     public void processLine(String line) {
-        var bankLine = line.split(" ");
-        var bankLineData = bankLine[0].split(";");
+        var bankLineData = line.split(";");
         var bankAccount = new BankAccount(
                 Long.parseLong(bankLineData[0]),
                 Long.parseLong(bankLineData[1]),
                 Double.parseDouble(bankLineData[2]),
-                Long.parseLong(bankLineData[3])
+                new Cpf(bankLineData[3])
         );
         dataStructure.add(bankAccount);
     }

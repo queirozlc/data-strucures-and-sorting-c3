@@ -1,11 +1,13 @@
 package shared;
 
-public record CpfHandler(DataStructure<Long> dataStructure) implements DataStructureHandler<Long> {
+public record CpfHandler(DataStructure<Cpf> dataStructure) implements DataStructureHandler<Cpf> {
 
     @Override
     public void processLine(String line) {
-        if (!dataStructure.contains(Long.parseLong(line))) {
-            dataStructure.add(Long.parseLong(line));
+        var cpf = new Cpf(line);
+
+        if (!dataStructure.contains(cpf)) {
+            dataStructure.add(cpf);
         }
     }
 

@@ -11,10 +11,10 @@ public class GroupProcessor {
         this.bankAccountDataStructure = bankAccountDataStructure;
     }
 
-    public void process(Consumer<Consumer<Long>> cpfIterator, Consumer<Consumer<BankAccount>> bankIterator, String title, String outputFileName) {
+    public void process(Consumer<Consumer<Cpf>> cpfIterator, Consumer<Consumer<BankAccount>> bankIterator, String title, String outputFileName) {
         var sb = new StringBuilder();
         cpfIterator.accept(cpf -> {
-            sb.append("CPF: ").append(cpf).append("\n");
+            sb.append("CPF: ").append(cpf.value()).append("\n");
             AtomicReference<Double> totalBalance = new AtomicReference<>(0.0);
             AtomicBoolean found = new AtomicBoolean(false);
             bankIterator.accept(value -> {

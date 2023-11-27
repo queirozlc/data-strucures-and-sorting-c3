@@ -1,8 +1,11 @@
 import avl_tree.AvlTree;
+import binary_tree.BinaryTree;
+import hash.LinkedHashTable;
 import shared.*;
 import sorting.SortedLinkedList;
 
 import java.io.FileNotFoundException;
+import java.util.concurrent.CompletableFuture;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
@@ -41,6 +44,33 @@ public class Main {
         // with the respective number of bank accounts, example:
         // cpf_avl_500.txt, cpf_btree_100.txt, cpf_linked-list_5000.txt and cpf_linked-hash-table_10000.txt
 
+        // PROCESS THE SHELL SORTS FIRST ASYNCHRONOUSLY
+        var cpfShellSortHandler = new CpfHandler(new SortedLinkedList<>());
+        var bankAccount500ShellSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_500);
+        var bankAccount1000ShellSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_1000);
+        var bankAccount5000ShellSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_5000);
+        var bankAccount10000ShellSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_10000);
+        var bankAccount50000ShellSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_50000);
+
+        FileProcessor.processFile(cpfShellSortHandler, bankAccount500ShellSortHandler, bankAccount1000ShellSortHandler, bankAccount5000ShellSortHandler, bankAccount10000ShellSortHandler, bankAccount50000ShellSortHandler);
+
+        var cpfShellSortLinkedList = (SortedLinkedList<Cpf>) cpfShellSortHandler.dataStructure();
+        var bankAccount500ShellSortLinkedList = (SortedLinkedList<BankAccount>) bankAccount500ShellSortHandler.dataStructure();
+        var bankAccount1000ShellSortLinkedList = (SortedLinkedList<BankAccount>) bankAccount1000ShellSortHandler.dataStructure();
+        var bankAccount5000ShellSortLinkedList = (SortedLinkedList<BankAccount>) bankAccount5000ShellSortHandler.dataStructure();
+        var bankAccount10000ShellSortLinkedList = (SortedLinkedList<BankAccount>) bankAccount10000ShellSortHandler.dataStructure();
+        var bankAccount50000ShellSortLinkedList = (SortedLinkedList<BankAccount>) bankAccount50000ShellSortHandler.dataStructure();
+
+        // use the completable future to process the shell sorts asynchronously
+        CompletableFuture.allOf(
+                CompletableFuture.runAsync(cpfShellSortLinkedList::shellSort),
+                CompletableFuture.runAsync(bankAccount500ShellSortLinkedList::shellSort),
+                CompletableFuture.runAsync(bankAccount1000ShellSortLinkedList::shellSort),
+                CompletableFuture.runAsync(bankAccount5000ShellSortLinkedList::shellSort),
+                CompletableFuture.runAsync(bankAccount10000ShellSortLinkedList::shellSort),
+                CompletableFuture.runAsync(bankAccount50000ShellSortLinkedList::shellSort)
+        );
+
         var title = "============ ARVORE AVL ============\n\n";
         var cpfHandler = new CpfHandler(new AvlTree<>());
         var bankAccount500AvlTreeHandler = new BankAccountHandler(new AvlTree<>(), AccountFileOptions.CONTA_500);
@@ -54,7 +84,7 @@ public class Main {
         FileProcessor.processFile(cpfHandler, bankAccount500AvlTreeHandler, bankAccount1000AvlTreeHandler, bankAccount5000AvlTreeHandler, bankAccount10000AvlTreeHandler, bankAccount50000AvlTreeHandler);
 
 
-        var cpfAvlTree = (AvlTree<Long>) cpfHandler.dataStructure();
+        var cpfAvlTree = (AvlTree<Cpf>) cpfHandler.dataStructure();
         var bankAccount500AvlTree = (AvlTree<BankAccount>) bankAccount500AvlTreeHandler.dataStructure();
         var bankAccount1000AvlTree = (AvlTree<BankAccount>) bankAccount1000AvlTreeHandler.dataStructure();
         var bankAccount5000AvlTree = (AvlTree<BankAccount>) bankAccount5000AvlTreeHandler.dataStructure();
@@ -88,12 +118,66 @@ public class Main {
         var bankAccountLinkedList = (SortedLinkedList<BankAccount>) bankAccountLinkedListHandler.dataStructure();
 
         title = "============ LISTA ENCADEADA USANDO QUICK SORT ============\n\n";
+        var cpfQuickSortHandler = new CpfHandler(new SortedLinkedList<>());
+        var bankAccount500QuickSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_500);
+        var bankAccount1000QuickSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_1000);
+        var bankAccount5000QuickSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_5000);
+        var bankAccount10000QuickSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_10000);
+        var bankAccount50000QuickSortHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_50000);
+
+        FileProcessor.processFile(cpfQuickSortHandler, bankAccount500QuickSortHandler, bankAccount1000QuickSortHandler, bankAccount5000QuickSortHandler, bankAccount10000QuickSortHandler, bankAccount50000QuickSortHandler);
+
+        var cpfLinkedList = (SortedLinkedList<Cpf>) cpfQuickSortHandler.dataStructure();
+        var bankAccount500LinkedList = (SortedLinkedList<BankAccount>) bankAccount500QuickSortHandler.dataStructure();
+        var bankAccount1000LinkedList = (SortedLinkedList<BankAccount>) bankAccount1000QuickSortHandler.dataStructure();
+        var bankAccount5000LinkedList = (SortedLinkedList<BankAccount>) bankAccount5000QuickSortHandler.dataStructure();
+        var bankAccount10000LinkedList = (SortedLinkedList<BankAccount>) bankAccount10000QuickSortHandler.dataStructure();
+        var bankAccount50000LinkedList = (SortedLinkedList<BankAccount>) bankAccount50000QuickSortHandler.dataStructure();
+
 
         cpfLinkedList.quickSortAsync();
-        bankAccountLinkedList.quickSortAsync();
+        bankAccount500LinkedList.quickSortAsync();
+        bankAccount1000LinkedList.quickSortAsync();
+        bankAccount5000LinkedList.quickSortAsync();
+        bankAccount10000LinkedList.quickSortAsync();
+        bankAccount50000LinkedList.quickSortAsync();
 
-        new GroupProcessor(bankAccountLinkedList)
-                .process(cpfLinkedList::forEach, bankAccountLinkedList::forEach, title, "resultado_linked-list.txt");
+
+        new GroupProcessor(bankAccount500LinkedList)
+                .process(cpfLinkedList::forEach, bankAccount500LinkedList::forEach, title, "resultado_quicksort500.txt");
+
+        new GroupProcessor(bankAccount1000LinkedList)
+                .process(cpfLinkedList::forEach, bankAccount1000LinkedList::forEach, title, "resultado_quicksort1000.txt");
+
+        new GroupProcessor(bankAccount5000LinkedList)
+                .process(cpfLinkedList::forEach, bankAccount5000LinkedList::forEach, title, "resultado_quicksort5000.txt");
+
+        new GroupProcessor(bankAccount10000LinkedList)
+                .process(cpfLinkedList::forEach, bankAccount10000LinkedList::forEach, title, "resultado_quicksort10000.txt");
+
+        new GroupProcessor(bankAccount50000LinkedList)
+                .process(cpfLinkedList::forEach, bankAccount50000LinkedList::forEach, title, "resultado_quicksort50000.txt");
+        System.out.println(cpfLinkedList.size());
+        cpfLinkedList.clear();
+
+        title = "============ LISTA ENCADEADA USANDO SHELL SORT ============\n\n";
+
+
+        new GroupProcessor(bankAccount500ShellSortLinkedList)
+                .process(cpfShellSortLinkedList::forEach, bankAccount500ShellSortLinkedList::forEach, title, "resultado_shellsort500.txt");
+
+        new GroupProcessor(bankAccount1000ShellSortLinkedList)
+                .process(cpfShellSortLinkedList::forEach, bankAccount1000ShellSortLinkedList::forEach, title, "resultado_shellsort1000.txt");
+
+        new GroupProcessor(bankAccount5000ShellSortLinkedList)
+                .process(cpfShellSortLinkedList::forEach, bankAccount5000ShellSortLinkedList::forEach, title, "resultado_shellsort5000.txt");
+
+        new GroupProcessor(bankAccount10000ShellSortLinkedList)
+                .process(cpfShellSortLinkedList::forEach, bankAccount10000ShellSortLinkedList::forEach, title, "resultado_shellsort10000.txt");
+
+        new GroupProcessor(bankAccount50000ShellSortLinkedList)
+                .process(cpfShellSortLinkedList::forEach, bankAccount50000ShellSortLinkedList::forEach, title, "resultado_shellsort50000.txt");
+
+        cpfShellSortLinkedList.clear();
     }
 }
-
