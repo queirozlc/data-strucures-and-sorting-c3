@@ -109,13 +109,78 @@ public class Main {
 
         cpfAvlTree.clear();
 
-        var cpfLinkedListHandler = new CpfHandler(new SortedLinkedList<>());
-        var bankAccountLinkedListHandler = new BankAccountHandler(new SortedLinkedList<>(), AccountFileOptions.CONTA_50000);
+        title = "============ ÁRVORE BINÁRIA DE BUSCA ============\n\n";
+        var cpfBinaryTreeHandler = new CpfHandler(new BinaryTree<>());
+        var bankAccount500BinaryTreeHandler = new BankAccountHandler(new BinaryTree<>(), AccountFileOptions.CONTA_500);
+        var bankAccount1000BinaryTreeHandler = new BankAccountHandler(new BinaryTree<>(), AccountFileOptions.CONTA_1000);
+        var bankAccount5000BinaryTreeHandler = new BankAccountHandler(new BinaryTree<>(), AccountFileOptions.CONTA_5000);
+        var bankAccount10000BinaryTreeHandler = new BankAccountHandler(new BinaryTree<>(), AccountFileOptions.CONTA_10000);
+        var bankAccount50000BinaryTreeHandler = new BankAccountHandler(new BinaryTree<>(), AccountFileOptions.CONTA_50000);
 
-        FileProcessor.processFile(cpfLinkedListHandler, bankAccountLinkedListHandler);
+        FileProcessor.processFile(cpfBinaryTreeHandler, bankAccount500BinaryTreeHandler, bankAccount1000BinaryTreeHandler, bankAccount5000BinaryTreeHandler, bankAccount10000BinaryTreeHandler, bankAccount50000BinaryTreeHandler);
 
-        var cpfLinkedList = (SortedLinkedList<Long>) cpfLinkedListHandler.dataStructure();
-        var bankAccountLinkedList = (SortedLinkedList<BankAccount>) bankAccountLinkedListHandler.dataStructure();
+        var cpfBinaryTree = (BinaryTree<Cpf>) cpfBinaryTreeHandler.dataStructure();
+
+        var bankAccount500BinaryTree = (BinaryTree<BankAccount>) bankAccount500BinaryTreeHandler.dataStructure();
+
+        var bankAccount1000BinaryTree = (BinaryTree<BankAccount>) bankAccount1000BinaryTreeHandler.dataStructure();
+
+        var bankAccount5000BinaryTree = (BinaryTree<BankAccount>) bankAccount5000BinaryTreeHandler.dataStructure();
+
+        var bankAccount10000BinaryTree = (BinaryTree<BankAccount>) bankAccount10000BinaryTreeHandler.dataStructure();
+
+        var bankAccount50000BinaryTree = (BinaryTree<BankAccount>) bankAccount50000BinaryTreeHandler.dataStructure();
+
+        new GroupProcessor(bankAccount500BinaryTree)
+                .process(cpfBinaryTree::forEach, bankAccount500BinaryTree::forEach, title, "resultado_binary-tree500.txt");
+
+        new GroupProcessor(bankAccount1000BinaryTree)
+                .process(cpfBinaryTree::forEach, bankAccount1000BinaryTree::forEach, title, "resultado_binary-tree1000.txt");
+
+        new GroupProcessor(bankAccount5000BinaryTree)
+                .process(cpfBinaryTree::forEach, bankAccount5000BinaryTree::forEach, title, "resultado_binary-tree5000.txt");
+
+        new GroupProcessor(bankAccount10000BinaryTree)
+                .process(cpfBinaryTree::forEach, bankAccount10000BinaryTree::forEach, title, "resultado_binary-tree10000.txt");
+
+        new GroupProcessor(bankAccount50000BinaryTree)
+                .process(cpfBinaryTree::forEach, bankAccount50000BinaryTree::forEach, title, "resultado_binary-tree50000.txt");
+
+        cpfBinaryTree.clear();
+
+        title = "============ TABELA HASH VETOR ENCADEADO ============\n\n";
+        var cpfLinkedHashTableHandler = new CpfHandler(new LinkedHashTable<>());
+        var bankAccount500LinkedHashTableHandler = new BankAccountHandler(new LinkedHashTable<>(), AccountFileOptions.CONTA_500);
+        var bankAccount1000LinkedHashTableHandler = new BankAccountHandler(new LinkedHashTable<>(), AccountFileOptions.CONTA_1000);
+        var bankAccount5000LinkedHashTableHandler = new BankAccountHandler(new LinkedHashTable<>(), AccountFileOptions.CONTA_5000);
+        var bankAccount10000LinkedHashTableHandler = new BankAccountHandler(new LinkedHashTable<>(), AccountFileOptions.CONTA_10000);
+        var bankAccount50000LinkedHashTableHandler = new BankAccountHandler(new LinkedHashTable<>(), AccountFileOptions.CONTA_50000);
+
+        FileProcessor.processFile(cpfLinkedHashTableHandler, bankAccount500LinkedHashTableHandler, bankAccount1000LinkedHashTableHandler, bankAccount5000LinkedHashTableHandler, bankAccount10000LinkedHashTableHandler, bankAccount50000LinkedHashTableHandler);
+
+        var cpfLinkedHashTable = (LinkedHashTable<Cpf>) cpfLinkedHashTableHandler.dataStructure();
+        var bankAccount500LinkedHashTable = (LinkedHashTable<BankAccount>) bankAccount500LinkedHashTableHandler.dataStructure();
+        var bankAccount1000LinkedHashTable = (LinkedHashTable<BankAccount>) bankAccount1000LinkedHashTableHandler.dataStructure();
+        var bankAccount5000LinkedHashTable = (LinkedHashTable<BankAccount>) bankAccount5000LinkedHashTableHandler.dataStructure();
+        var bankAccount10000LinkedHashTable = (LinkedHashTable<BankAccount>) bankAccount10000LinkedHashTableHandler.dataStructure();
+        var bankAccount50000LinkedHashTable = (LinkedHashTable<BankAccount>) bankAccount50000LinkedHashTableHandler.dataStructure();
+
+        new GroupProcessor(bankAccount500LinkedHashTable)
+                .process(cpfLinkedHashTable::forEach, bankAccount500LinkedHashTable::forEach, title, "resultado_linked-hash-table500.txt");
+
+        new GroupProcessor(bankAccount1000LinkedHashTable)
+                .process(cpfLinkedHashTable::forEach, bankAccount1000LinkedHashTable::forEach, title, "resultado_linked-hash-table1000.txt");
+
+        new GroupProcessor(bankAccount5000LinkedHashTable)
+                .process(cpfLinkedHashTable::forEach, bankAccount5000LinkedHashTable::forEach, title, "resultado_linked-hash-table5000.txt");
+
+        new GroupProcessor(bankAccount10000LinkedHashTable)
+                .process(cpfLinkedHashTable::forEach, bankAccount10000LinkedHashTable::forEach, title, "resultado_linked-hash-table10000.txt");
+
+        new GroupProcessor(bankAccount50000LinkedHashTable)
+                .process(cpfLinkedHashTable::forEach, bankAccount50000LinkedHashTable::forEach, title, "resultado_linked-hash-table50000.txt");
+
+        cpfLinkedHashTable.clear();
 
         title = "============ LISTA ENCADEADA USANDO QUICK SORT ============\n\n";
         var cpfQuickSortHandler = new CpfHandler(new SortedLinkedList<>());
